@@ -1,0 +1,21 @@
+.file-link {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.file-link-visited {
+  color: purple;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.file-link-loading {
+  color: initial;
+  text-decoration: initial;
+  cursor: initial;
+}
+
+.file-link:active {
+  color: red;
+}

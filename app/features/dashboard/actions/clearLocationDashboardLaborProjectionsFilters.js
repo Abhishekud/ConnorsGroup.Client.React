@@ -1,0 +1,7 @@
+export const CLEAR_LOCATION_DASHBOARD_LABOR_PROJECTIONS_FILTERS = 'CLEAR_LOCATION_DASHBOARD_LABOR_PROJECTIONS_FILTERS';
+
+export function clearLocationDashboardLaborProjectionsFilters() {
+  return {
+    type: CLEAR_LOCATION_DASHBOARD_LABOR_PROJECTIONS_FILTERS,
+  };
+}

@@ -1,0 +1,7 @@
+export const CLOSE_IMPORT_VOLUME_DRIVERS_VALIDATION_ERRORS = 'CLOSE_IMPORT_VOLUME_DRIVERS_VALIDATION_ERRORS';
+
+export function closeImportVolumeDriversValidationErrors() {
+  return {
+    type: CLOSE_IMPORT_VOLUME_DRIVERS_VALIDATION_ERRORS,
+  };
+}

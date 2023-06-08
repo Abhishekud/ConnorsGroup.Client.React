@@ -1,0 +1,14 @@
+.units-of-measure-list-page {
+  .standards-count {
+    text-align: right;
+  }
+
+  .column-header-standards-count span {
+    width: 100%;
+    text-align: right;
+  }  
+  
+  .departments-selector {
+    width: $dropdown-page-selector-width;
+  }
+}

@@ -1,0 +1,19 @@
+.elements-search-page {
+  .ReactVirtualized__Table__row:not(.disabled) {
+    cursor: pointer;
+  }
+
+  .element-id-cell {
+    margin-left: 0px;
+
+    > div {
+      height: 30px;
+      padding-left: 10px;
+      @include flexbox(row, flex-start);
+
+      > span {
+        @include flexbox(column, center);
+      }
+    }
+  }
+}

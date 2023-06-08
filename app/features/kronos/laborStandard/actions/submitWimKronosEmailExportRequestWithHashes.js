@@ -1,0 +1,13 @@
+import {http} from '../../../shared/services';
+
+export const SUBMIT_WIM_KRONOS_EMAIL_EXPORT_REQUEST_WITH_HASHES = 'SUBMIT_WIM_KRONOS_EMAIL_EXPORT_REQUEST_WITH_HASHES';
+export const SUBMIT_WIM_KRONOS_EMAIL_EXPORT_REQUEST_WITH_HASHES_PENDING = `${SUBMIT_WIM_KRONOS_EMAIL_EXPORT_REQUEST_WITH_HASHES}_PENDING`;
+export const SUBMIT_WIM_KRONOS_EMAIL_EXPORT_REQUEST_WITH_HASHES_FULFILLED = `${SUBMIT_WIM_KRONOS_EMAIL_EXPORT_REQUEST_WITH_HASHES}_FULFILLED`;
+export const SUBMIT_WIM_KRONOS_EMAIL_EXPORT_REQUEST_WITH_HASHES_REJECTED = `${SUBMIT_WIM_KRONOS_EMAIL_EXPORT_REQUEST_WITH_HASHES}_REJECTED`;
+
+export function submitWimKronosEmailExportRequestWithHashes(laborStandardIds, filter, allStandardsSelected) {
+  return {
+    type: SUBMIT_WIM_KRONOS_EMAIL_EXPORT_REQUEST_WITH_HASHES,
+    payload: http.post('kronos/wim-kronos-export-request-hashes', {laborStandardIds, filter, allStandardsSelected}),
+  };
+}

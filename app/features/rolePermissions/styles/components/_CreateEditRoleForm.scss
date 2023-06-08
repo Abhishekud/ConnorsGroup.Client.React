@@ -1,0 +1,26 @@
+.create-edit-role-form {
+  .role {
+    @include flexbox();
+    flex-wrap: wrap;
+    margin-right: -10px;
+
+    > .form-group.role {
+      margin-right: 10px;
+    }
+  }
+}
+
+.modal-body .create-edit-role-form .role > .form-group.role {
+  flex: 1 125px;
+  min-width: 100px;
+}
+
+.roles-list-edit-sidebar .create-edit-role-form .role > .form-group.role {
+  flex: 0 0 106px;
+  max-width: 106px;
+}
+
+.role-edit-user-count {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}

@@ -1,0 +1,21 @@
+.attributes-list-page {
+  .standards-count {
+    text-align: right;
+  }
+
+  .column-header-standards-count span {
+    width: 100%;
+    text-align: right;
+  }
+
+  .departments-selector {
+    width: $dropdown-page-selector-width;
+    margin-bottom: 0;
+    margin-right: 15px;
+  }
+  .attributes-grid-header-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+}

@@ -1,0 +1,59 @@
+.sidebar.standard-profile {
+  > .sidebar-section.standard-details {
+    border-bottom: solid 1px $gray;
+  }
+
+  > .standard-profile-sidebar-actions {
+    margin-top: 10px;
+
+    > button {
+      margin-right: 10px;
+    }
+  }
+
+  .standard-status-log {
+    @include flexbox(row, flext-start);
+
+    > .statuses {
+      flex: 1 0 220px;
+    }
+
+    > .date {
+      flex: 1 0 10px;
+      text-align: right;
+    }
+
+    > .comment {
+      flex: 1 0 10px;
+      text-align: right;
+    }
+
+    @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) { 
+      > .comment {
+        flex: 1 0 36px;
+        text-align: right;
+      }
+    }
+  }
+
+  .standard-status-log-comment {
+    border: solid 1px $gray;
+    border-radius: 3px;
+    padding: 5px;
+    margin-bottom: 15px;
+  }
+
+  .toggle-switch .checkbox {
+    margin-top: 0;
+  }
+
+  .action-buttons {
+    button.revision {
+      margin-left: 10px;
+    }
+  }
+
+  .standard-characteristic-set{
+    padding-bottom: 10px;
+  }
+}

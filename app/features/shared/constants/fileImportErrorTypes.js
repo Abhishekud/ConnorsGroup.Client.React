@@ -1,0 +1,17 @@
+export const PARSE = 'Parse';
+export const REQUIRED = 'Required';
+export const NOT_FOUND = 'NotFound';
+export const DECIMAL_LENGTH = 'DecimalLength';
+export const LENGTH = 'Length';
+export const DUPLICATE = 'Duplicate';
+export const INVALID_INACTIVE_DATE = 'InvalidInactiveDate';
+export const INVALID_FORMAT = 'InvalidFormat';
+export const INVALID_HEADER_VALUE = 'InvalidHeaderValue';
+export const INVALID_CONTEXT = 'InvalidContext';
+export const NON_NEGATIVE = 'NonNegative';
+export const INTEGRATION_DISABLED = 'IntegrationDisabled';
+export const OVERLAPPED = 'Overlapped';
+export const ACCESS_DENIED = 'AccessDenied';
+export const DUPLICATE_HEADER = 'DuplicateHeader';
+export const DUPLICATE_SETTING_COLUMN_VALUE = 'DuplicateSettingColumnValue';
+export const INVALID_VALUE = 'InvalidValue';

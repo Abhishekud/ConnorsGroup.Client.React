@@ -1,0 +1,89 @@
+.dashboard {
+  @include flexbox(column);
+  height: 100%;
+
+  .labor-projections {
+    flex: 1 1 auto;
+    @include flexbox(column);
+
+    .header-info {
+      flex: 0 0 auto;
+
+      @include flexbox(row, space-between, center);
+
+      .title-block {
+        flex: 1;
+        margin-top: 20px;
+
+        .title {
+          font-size: 2rem;
+          font-weight: bold;
+          margin-bottom: 20px;
+        }
+
+        .description {
+          font-size: 1.5rem;
+          font-weight: normal;
+        }
+
+        .sub-title {
+          font-size: 1.5rem;
+          margin-bottom: 5px;
+        }
+
+        .title-prefix {
+
+        }
+
+        .sub-information {
+          color: $gray;
+          font-size: 1.2rem;
+          margin-bottom: 30px;
+        }
+      }
+
+      .reset-location {
+        flex: 0 0 auto;
+      }
+    }
+
+    .list, .treemap {
+      flex: 1 1 auto;
+    }
+
+    .treemap {
+      min-height: 300px;
+
+      .no-rows > h3 {
+        margin: 0;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .navigation-bar {
+    @include flexbox(row, center, center);
+    background-color: $gray-light;
+    color: $gray-dark;
+    margin-top: 15px;
+    padding: 5px;
+
+    .scroll-placeholder ,.scroll-left, .scroll-right {
+      text-align: center;
+      flex: 0 20px;
+    }
+
+    .scroll-left, .scroll-right {
+      cursor: pointer;
+    }
+
+    .navigation-bar-item {
+      text-align: center;
+      flex: 1;
+    }
+    .navigation-bar-item.selected {
+      font-weight: bold;
+      color: black;
+    }
+  }
+}

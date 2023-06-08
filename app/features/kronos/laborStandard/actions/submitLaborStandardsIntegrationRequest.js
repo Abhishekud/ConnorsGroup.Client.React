@@ -1,0 +1,13 @@
+import {http} from '../../../shared/services';
+
+export const SUBMIT_LABOR_STANDARDS_INTEGRATION_REQUEST = 'SUBMIT_KRONOS_LABOR_STANDARDS_INTEGRATION_REQUEST';
+export const SUBMIT_LABOR_STANDARDS_INTEGRATION_REQUEST_PENDING = `${SUBMIT_LABOR_STANDARDS_INTEGRATION_REQUEST}_PENDING`;
+export const SUBMIT_LABOR_STANDARDS_INTEGRATION_REQUEST_FULFILLED = `${SUBMIT_LABOR_STANDARDS_INTEGRATION_REQUEST}_FULFILLED`;
+export const SUBMIT_LABOR_STANDARDS_INTEGRATION_REQUEST_REJECTED = `${SUBMIT_LABOR_STANDARDS_INTEGRATION_REQUEST}_REJECTED`;
+
+export function submitLaborStandardsIntegrationRequest(endpointId, laborStandardIds) {
+  return {
+    type: SUBMIT_LABOR_STANDARDS_INTEGRATION_REQUEST,
+    payload: http.post('kronos/integrationrequest', {endpointId, laborStandardIds, allStandardsSelected: false}),
+  };
+}

@@ -1,0 +1,46 @@
+.navigation-sidebar {
+  > button {
+    position: absolute;
+    top: 12px;
+    left: 15px;
+  }
+
+  &.open {
+    border-right: 1px solid $gray-light;
+    flex: 0 0 235px;
+    @include flexbox(column, space-between);
+
+    > .client-logo {
+      @include flexbox(row, center, center);
+
+      flex: 0 0 200px;
+      margin: 15px;
+
+      img {
+        max-width: 200px;
+        max-height: 200px;
+      }
+    }
+
+    > .navigation-container {
+      overflow: auto;
+      flex: 1 100%;
+    }
+
+    > .application-logo {
+      border-top: 1px solid $gray-light;
+      flex: 0 0 48px;
+      @include flexbox(row, center, center);
+      > img {
+        flex: 0 0;
+        height: 24px;
+        width: 140px;
+      }
+    }
+  }
+
+  &.closed {
+    width: 0;
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,63 @@
+.add-standard-item {
+  padding: 5px;
+
+  &.inline {
+    border-top: solid 1px $gray-light;
+  }
+
+  &.standalone {
+    border-radius: 4px;
+    border: solid 2px $gray;
+    margin: 4px 0;
+  }
+
+  .add-label {
+    margin-right: 20px;
+  }
+
+  .form-group {
+    margin: 0;
+
+    > label {
+      font-size: 14px;
+      font-weight: normal;
+      color: $gray-dark;
+    }
+  }
+
+  @include flexbox(row, flex-start, center);
+
+  > .element-related {
+    margin-right: 30px;
+    background-color: $gray-light;
+    padding: 10px 25px;
+    border-radius: 4px;
+
+    @include flexbox(row, flex-start, center);
+
+    input {
+      width: 185px;
+      text-align: right;
+    }
+
+    > .btn.btn-default {
+      margin-left: 10px;
+    }
+  }
+
+  > .or-divider {
+    width: 50px;
+  }
+
+  > .group-related {
+    @include flexbox(row, flex-start, center);
+    margin-right: 20px;
+    background-color: $gray-light;
+    padding: 10px 25px;
+    border-radius: 4px;
+
+    input {
+      width: 300px;
+    }
+  }
+}

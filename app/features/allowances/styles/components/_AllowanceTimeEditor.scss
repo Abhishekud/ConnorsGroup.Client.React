@@ -1,0 +1,47 @@
+.allowance-times-container {
+  .allowance-time-editor > .content {
+    padding: 12px;
+
+    @include flexbox(column, center);
+
+    .form-group {
+      margin-bottom: 0;
+    }
+
+    > .header {
+      @include flexbox(row, flex-start, center);
+
+      > .name {
+        flex: 1;
+        max-width: 800px;
+      }
+
+      > .time {
+        flex: 0 0 125px;
+        margin-left: 10px;
+      }
+
+      > .buttons {
+        flex: 0 0 auto;
+
+        > button {
+          margin-left: 10px;
+        }
+      }
+    }
+
+    > .definition {
+      margin-top: 10px;
+    }
+  }
+
+  > .allowance-time {
+    border-radius: 4px;
+    border: solid 2px $gray;
+    margin-bottom: 15px;
+  }
+
+  > .allowance-time-group-container > .allowance-time-group > .allowance-time-editor {
+    border-top: solid 1px $gray-light;
+  }
+}

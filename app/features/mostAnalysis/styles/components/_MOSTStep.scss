@@ -1,0 +1,121 @@
+.most-steps-container > .most-step-container > .most-step {
+  border-radius: 5px;
+  border: 2px solid $gray;
+  padding: 6px 10px 6px 0;
+
+  @include flexbox(row, flex-start, center);
+
+  > .bulk-edit-checkbox {
+    flex: 0 0 15px;
+    @include flexbox(column, center);
+    font-weight: bold;
+    margin-left: 10px;
+
+    i.fa {
+      padding-top: 1px;
+    }
+  }
+
+  > .number {
+    flex: 0 0 32px;
+    font-weight: bold;
+    margin: 0 10px;
+    text-align: center;
+  }
+
+  > .description {
+    font-weight: bold;
+    flex: 1 200px;
+    min-width: 100px;
+    margin: 0 10px;
+
+    @include flexbox(row, flex-start, center);
+
+    > span {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      word-wrap: normal;
+    }
+
+    > button {
+      visibility: hidden;
+      margin-left: 10px;
+    }
+  }
+
+  > .sequence-model {
+    font-weight: bold;
+    flex: 1 300px;
+    min-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0 10px;
+  }
+
+  > .simo-toggle {
+    flex: 1 97px;
+    min-width: 97px;
+    color: $gray-dark;
+    margin: 0 10px;
+
+    @include flexbox(row, center, center);
+
+    > i {
+      margin-left: 15px;
+      font-size: 3.5rem;
+    }
+
+    > i.fa-toggle-on {
+      color: $text-color;
+    }
+  }
+
+  > .frequency {
+    flex: 1 127px;
+    min-width: 127px;
+    color: $gray-dark;
+    margin: 0 10px;
+
+    @include flexbox(row, center, baseline);
+
+    > .value {
+      margin-left: 15px;
+      color: $text-color;
+    }
+  }
+
+  > .tmus {
+    flex: 1 85px;
+    min-width: 85px;
+    color: $gray-dark;
+    margin: 0 10px;
+
+    @include flexbox(row, center, baseline);
+
+    > .value {
+      margin-left: 15px;
+      color: $text-color;
+    }
+  }
+
+  > .time {
+    flex: 1 160px;
+    min-width: 160px;
+    color: $gray-dark;
+    margin: 0 10px;
+
+    @include flexbox(row, center, baseline);
+
+    > .value {
+      margin-left: 15px;
+      color: $text-color;
+    }
+  }
+
+  &:hover {
+    > .description > button {
+      visibility: visible;
+      animation: fadeIn 0.5s;
+    }
+  }
+}

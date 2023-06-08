@@ -1,0 +1,12 @@
+export const ADAPT_INTEGRATION = 'adapt';
+export const ADAPT_XML_INTEGRATION = 'adaptXml';
+export const KRONOS_INTEGRATION = 'kronos';
+export const CONTINUOUS_LABOR_CALCULATION = 'continuousLaborCalculation';
+export const KRONOS_INTEGRATION_VERSION = 'kronosIntegrationVersion';
+export const WIM_EMAIL_EXPORT = 'wimEmailExport';
+export const REFLEXIS_MODULE = 'reflexisModule';
+export const INDUSTRY_ALLOWANCE_MODULE = 'industryAllowanceModule';
+export const PARTS = 'parts';
+export const VOLUME_DRIVER_VALUE_SETS_LIMIT = 'volumeDriverValueSetsLimit';
+export const ADMIN_RESET_SITE = 'adminResetSite';
+export const VOLUME_DRIVER_MAPPING_VARIABLES_MODULE = 'volumeDriverMappingVariablesModule';

@@ -1,0 +1,26 @@
+.create-edit-volume-driver-mapping-variables-form {
+  .volume-driver-mapping-sets {
+    @include flexbox();
+    flex-wrap: wrap;
+    margin-right: -10px;
+
+    >.form-group.volume-driver-mapping-set {
+      margin-right: 10px;
+    }
+  }
+}
+
+.modal-body .create-edit-volume-driver-mapping-variables-form .volume-driver-mapping-sets>.form-group.volume-driver-mapping-set {
+  flex: 1 125px;
+  min-width: 100px;
+}
+
+.volume-driver-mappings-variables-list-edit-sidebar .create-edit-volume-driver-mapping-variables-form .volume-driver-mapping-sets>.form-group.volume-driver-mapping-set {
+  flex: 0 0 106px;
+  max-width: 106px;
+}
+
+.volume-driver-mapping-variables .sidebar-header .sidebar-header-actions {
+  padding-left: 0 !important;
+
+}

@@ -1,0 +1,11 @@
+.sidebar-body > .standard-units-of-measure > .standard-uom {
+    padding-bottom: 15px;
+
+  > .uom-name {
+    font-weight: bold;
+  }
+
+  > .uom-times > .uom-time {
+    @include flexbox(row, space-between);
+  }
+}

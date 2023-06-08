@@ -1,0 +1,21 @@
+.create-edit-attribute-form {
+  .attribute {
+    @include flexbox();
+    flex-wrap: wrap;
+    margin-right: -10px;
+
+    > .form-group.attribute {
+      margin-right: 10px;
+    }
+  }
+}
+
+.modal-body .create-edit-attribute-form .attribute > .form-group.attribute {
+  flex: 1 125px;
+  min-width: 100px;
+}
+
+.attributes-list-edit-sidebar .create-edit-attribute-form .attribute > .form-group.attribute {
+  flex: 0 0 106px;
+  max-width: 106px;
+}

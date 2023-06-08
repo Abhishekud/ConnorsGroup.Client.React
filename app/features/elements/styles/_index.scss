@@ -1,0 +1,14 @@
+@import 'components/_ElementProfileSidebar';
+@import 'components/_ElementsListFilter';
+@import 'components/_ElementsListPage';
+@import 'components/_ElementsSearchPage';
+
+form.edit-element-header-form {
+  > button.btn-danger {
+    float: right;
+  }
+}
+
+div.element-time {
+  margin: 7px 20px;
+}

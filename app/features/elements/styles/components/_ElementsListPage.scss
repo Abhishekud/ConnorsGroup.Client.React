@@ -1,0 +1,74 @@
+.elements-list-page {
+  .ReactVirtualized__Table__row {
+    cursor: pointer;
+  }
+
+  .selector-column {
+    margin: 0px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .k-alt .elementIdCell.draft { 
+    background-color: rgb(201 193 169) !important;
+  }
+  
+  tr:not(.k-alt) .elementIdCell.draft {
+    background-color: rgb(206 198 174) !important;
+  }
+
+  tr:hover .elementIdCell.draft {
+    background-color: rgb(200 189 155) !important;
+  }
+
+  .k-alt .elementIdCell.ready-for-qa { 
+    background-color: rgb(242 235 218) !important;
+  }
+ 
+  tr:not(.k-alt) .elementIdCell.ready-for-qa {
+    background-color: rgb(245 239 223) !important;
+  }
+
+  tr:hover .elementIdCell.ready-for-qa {
+    background-color: rgb(239 230 204) !important;
+  }
+
+  .k-alt .elementIdCell.archive { 
+    background-color: rgb(224 234 238) !important;
+  }
+ 
+  tr:not(.k-alt) .elementIdCell.archive {
+    background-color: rgb(229 238 242) !important;
+  }
+
+  tr:hover .elementIdCell.archive {
+    background-color: rgb(223 229 223) !important;
+  }
+
+  .element-id-cell {
+    margin-left: 0px;
+
+    > div {
+      height: 30px;
+      padding-left: 10px;
+      @include flexbox(row, flex-start);
+
+      &.draft {
+        font-weight: bold;
+      }
+
+      &.ready-for-qa {
+        font-weight: bold;
+      }
+
+      &.archive {
+        font-weight: bold;
+      }
+
+      > span {
+        @include flexbox(column, center);
+      }
+    }
+  }
+}

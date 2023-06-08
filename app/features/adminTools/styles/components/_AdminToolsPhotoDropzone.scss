@@ -1,0 +1,13 @@
+.admin-tools-photo-dropzone {
+  display: inline-block;
+  text-align: center;
+  width: 220px;
+
+  .dropzone-area {
+    height: 240px;
+    border-style: dashed;
+    padding: 100px 10px 10px 10px;
+    font-size: 12px;
+    margin: auto;
+  }
+}

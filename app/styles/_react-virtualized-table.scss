@@ -1,0 +1,90 @@
+.ReactVirtualized__Table {
+  font-size: 14px;
+
+  > .ReactVirtualized__Table__headerRow {
+    background-color: $blue;
+    border-radius: 4px 4px 0 0;
+
+    > .ReactVirtualized__Table__headerColumn {
+      @include flexbox();
+      align-items: center;
+      outline: none;
+
+      > .ReactVirtualized__Table__headerTruncatedText {
+        text-transform: none;
+      }
+    }
+
+    > .ReactVirtualized__Table__headerColumn.default > .ReactVirtualized__Table__headerTruncatedText {
+      border-bottom: solid 5px $text-color;
+      position: relative;
+      top: 2px;
+    }
+
+    > .ReactVirtualized__Table__headerColumn.table-header-right {
+      justify-content: flex-end;
+    }
+  }
+
+  > .ReactVirtualized__Table__Grid {
+    outline: none;
+
+    > div.no-rows {
+      padding: 15px  15px 15px 100px;
+      text-align: left;
+
+      > h3 {
+        font-weight: bold;
+        margin: 0;
+      }
+    }
+
+    .ReactVirtualized__Table__row {
+      &:focus {
+        outline: 0;
+      }
+
+      &.odd {
+        background-color: $gray-light;
+      }
+
+      &:hover, &.selected {
+        background-color: $hover-bg;
+      }
+
+      &.disabled {
+        color: $gray;
+      }
+    }
+  }
+
+  // make all table headers auto size based on content
+  .ReactVirtualized__Table__headerRow {
+    height: initial !important;
+    padding: 15px 0;
+  }
+  .ReactVirtualized__Table__headerTruncatedText {
+    white-space: normal !important
+  }
+
+  .column-header-right-align span {
+    text-align: right;
+    width: 100%;
+  }
+  .column-right-align {
+    text-align: right;
+  }
+
+  .column-header-center-align span {
+    text-align: center;
+    width: 100%;
+  }
+  .column-center-align {
+    text-align: center;
+  }
+
+  .list-row-selector {
+    margin-top: 1px;
+    margin-bottom: -1px;
+  }
+}

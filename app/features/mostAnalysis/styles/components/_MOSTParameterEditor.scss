@@ -1,0 +1,83 @@
+.most-steps-container > .most-step-container > .most-step-editor > .most-phases > .most-phase > .most-parameters {
+  > .most-parameter {
+    width: 105px;
+    margin-left: 15px;
+
+    @include flexbox(column, center, flex-start);
+
+    > .index-values-row {
+      margin-bottom: 8px;
+      width: 100%;
+      max-width: 105px;
+
+      @include flexbox(row, center, center);
+
+      span {
+        flex: 1;
+        font-weight: bolder;
+        font-size: 2.5rem;
+        margin-right: 10px;
+      }
+
+      > .form-group.index-value {
+        width: 75px;
+        margin: 0;
+
+        > input {
+          padding: 0 6px;
+          height: 35px;
+          text-align: right;
+        }
+      }
+    }
+
+    .partial-frequency-label {
+      font-size: 1.2rem;
+      font-weight: normal;
+      width: 100%;
+    }
+
+    .partial-frequency-label-text {
+      display: inline-block;
+    }
+
+    .form-group.partial-frequency {
+      margin: 0;
+      float: right;
+      width: 75px;
+
+      > input {
+        max-width: 105px;
+        text-align: right;
+      }
+    }
+
+    > .partial-simo-row {
+      margin-top: 8px;
+      width: 100%;
+
+      > label {
+        @include flexbox(row, flex-start, center);
+
+        font-weight: normal;
+        margin-bottom: 0;
+        cursor: pointer;
+        float: right;
+
+        > input[type="checkbox"] {
+          width: auto;
+          margin: 0;
+        }
+
+        > span {
+          font-size: 1.2rem;
+          margin-left: 2px;
+        }
+      }
+    }
+  }
+
+  > .most-parameter:first-child {
+    margin-left: 0;
+  }
+}

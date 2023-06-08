@@ -1,0 +1,13 @@
+import {http} from '../../shared/services';
+
+const GENERATE_BULK_EXPORT_THROUGH_FUNCTION = 'GENERATE_BULK_EXPORT_THROUGH_FUNCTION';
+export const GENERATE_BULK_EXPORT_THROUGH_FUNCTION_FULFILLED = `${GENERATE_BULK_EXPORT_THROUGH_FUNCTION}_FULFILLED`;
+export const GENERATE_BULK_EXPORT_THROUGH_FUNCTION_PENDING = `${GENERATE_BULK_EXPORT_THROUGH_FUNCTION}_PENDING`;
+export const GENERATE_BULK_EXPORT_THROUGH_FUNCTION_REJECTED = `${GENERATE_BULK_EXPORT_THROUGH_FUNCTION}_REJECTED`;
+
+export function generateBulkExport(StandardIds, ReportType, TimeFormat) {
+  return {
+    type: GENERATE_BULK_EXPORT_THROUGH_FUNCTION,
+    payload: http.post('standards/export/bulk-export', {StandardIds, ReportType, TimeFormat}),
+  };
+}

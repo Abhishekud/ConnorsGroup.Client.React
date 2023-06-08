@@ -1,0 +1,51 @@
+.standards-list-page {
+  .ReactVirtualized__Table__row {
+    cursor: pointer;
+  }
+
+  .selector-column {
+    margin: 0px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .standard-id-cell {
+    > div {
+      height: 30px;
+      padding-left: 10px;
+      @include flexbox(row, flex-start);
+
+      &.draft {
+        font-weight: bold;
+      }
+
+      &.ready-for-qa {
+        font-weight: bold;
+      }
+
+      &.archive {
+        font-weight: bold;
+      }
+
+      > span {
+        @include flexbox(column, center);
+      }
+    }
+  }
+
+
+  .flyout {
+    .edit-controls {
+      a {
+        font-size: 14px;
+        color: $gray-dark;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .text-danger > .text-decoration-underline {
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,13 @@
+import {http} from '../../shared/services';
+
+export const ELEMENT_WHERE_USED_STANDARDS_LIST = 'ELEMENT_WHERE_USED_STANDARDS_LIST';
+export const ELEMENT_WHERE_USED_STANDARDS_LIST_PENDING = `${ELEMENT_WHERE_USED_STANDARDS_LIST}_PENDING`;
+export const ELEMENT_WHERE_USED_STANDARDS_LIST_FULFILLED = `${ELEMENT_WHERE_USED_STANDARDS_LIST}_FULFILLED`;
+export const ELEMENT_WHERE_USED_STANDARDS_LIST_REJECTED = `${ELEMENT_WHERE_USED_STANDARDS_LIST}_REJECTED`;
+
+export function loadElementWhereUsedStandardsList(id) {
+  return {
+    type: ELEMENT_WHERE_USED_STANDARDS_LIST,
+    payload: http.post(`elements/${id}/where-used`),
+  };
+}

@@ -1,0 +1,55 @@
+.page > .page-header {
+  > .page-header-actions {
+    &:first-child {
+      @include flexbox(row, flex-start, center);
+    }
+
+    &:last-child {
+      @include flexbox(row, flex-end, center);
+      max-width: 310px;
+    }
+
+    > * {
+      margin-left: 15px;
+    }
+  }
+}
+
+.locations-standards-export-list-page.page > .page-header {
+  > .page-header-actions {
+    max-width: 355px;
+  }
+}
+
+.standard-builder-page.page > .page-header {
+  > .page-header-actions:last-child {
+    max-width: 365px;
+  }
+}
+
+.most-element-builder-page.page,
+.timed-element-builder-page.page {
+  > .page-header {
+    > .page-header-actions:last-child {
+      max-width: 350px;
+    }
+  }
+}
+
+// IE10+  AAARRRRGH!!!
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) { 
+  .standard-builder-page.page > .page-header {
+    > .page-header-actions:last-child {
+      flex: 1 0 310px;
+    }
+  }
+
+  .most-element-builder-page.page,
+  .timed-element-builder-page.page {
+    > .page-header {
+      > .page-header-actions:last-child {
+        flex: 1 0 350px;
+      }
+    }
+  }
+}

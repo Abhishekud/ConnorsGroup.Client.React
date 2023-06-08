@@ -1,0 +1,89 @@
+.admin-tools-page,
+.tumbleweed-endpoint-page {
+  .settings-row {
+    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  .fields {
+    margin-bottom: 50px;
+
+    .actions {
+      float: right;
+
+      button {
+        margin-left: 15px;
+      }
+    }
+  }
+
+  .field {
+    @include flexbox(row, flex-start);
+    width: 600px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    > .field-name {
+      @include flexbox(column, center);
+      flex: 1;
+    }
+
+    > .field-value {
+      @include flexbox(column, center);
+      flex: 1 0 200px;
+
+      > .form-group { margin: 0px; }
+
+      > .checkbox {
+        @include flexbox(column, center);
+      }
+    }
+  }
+
+  .settings-column {
+    flex: 1;
+    text-align: center;
+    margin: 40px;
+    max-height: 300px;
+    width: 220px;
+  }
+
+  .sketch-picker {
+    width: 220px !important;
+    margin: auto;
+  }
+
+  .dropzone-area {
+    width: 220px;
+  }
+
+  .background-color {
+    height: 50px;
+    width: 200px;
+    background: color;
+  }
+  .current {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+
+    img {
+      max-width: 200px;
+      max-height: 200px;
+    }
+
+    .logo {
+      margin-bottom: 10px;
+    }
+  }
+
+  .reset-btn {
+    color: white;
+    background-color: red;
+  }
+}

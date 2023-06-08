@@ -1,0 +1,7 @@
+export const TOGGLE_VOLUME_DRIVER_MAPPING_CATEGORIES_SIDEBAR = 'TOGGLE_VOLUME_DRIVER_MAPPING_CATEGORIES_SIDEBAR';
+
+export function toggleVolumeDriverMappingSetsSidebar() {
+  return {
+    type: TOGGLE_VOLUME_DRIVER_MAPPING_CATEGORIES_SIDEBAR,
+  };
+}

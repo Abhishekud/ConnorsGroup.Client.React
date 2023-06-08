@@ -1,0 +1,14 @@
+.matrix-grid-header-checkbox {
+  padding-left: 2px;
+  @include flexbox(row, start, center);
+
+  > i {
+    margin: 0 3px 0 0;
+  }
+
+  > span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

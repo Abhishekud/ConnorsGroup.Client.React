@@ -1,0 +1,500 @@
+import {reorderColumns} from '../services';
+const {describe, test, expect, beforeAll} = global;
+import {fromJS} from 'immutable';
+import {_} from 'lodash';
+
+describe('Check the behaviour of unlocked column after reordering action is performed', () => {
+  let originalColumnsData;
+  let event;
+
+  beforeAll(() => {
+    originalColumnsData = fromJS([{
+      editable: false,
+      field: 'name',
+      filterable: true,
+      included: true,
+      lockable: true,
+      locked: true,
+      orderIndex: 0,
+      sortable: true,
+      title: 'Location',
+      width: 200,
+    },
+    {
+      editable: false,
+      field: 'description',
+      filterable: true,
+      included: true,
+      lockable: true,
+      locked: true,
+      orderIndex: 1,
+      sortable: true,
+      title: 'Location Description',
+      width: 200,
+    },
+    {
+      editable: false,
+      field: 'orghierarchylevel_1',
+      filterable: true,
+      included: true,
+      lockable: true,
+      locked: false,
+      orderIndex: 2,
+      sortable: true,
+      title: 'Brand',
+      width: 200,
+    },
+    {
+      editable: false,
+      field: 'orghierarchylevel_2',
+      filterable: true,
+      included: true,
+      lockable: true,
+      locked: false,
+      orderIndex: 3,
+      sortable: true,
+      title: 'New Brand',
+      width: 200,
+    },
+    {
+      editable: false,
+      field: 'orghierarchylevel_3',
+      filterable: true,
+      included: true,
+      lockable: true,
+      locked: false,
+      orderIndex: 4,
+      sortable: true,
+      title: 'Newest brand',
+      width: 200,
+    },
+    {
+      className: '',
+      editor: 'boolean',
+      field: 'attribute_2887',
+      filterable: true,
+      included: true,
+      lockable: true,
+      locked: false,
+      orderIndex: 5,
+      sortable: false,
+      title: 'ALWAYS INCLUDED',
+      width: 170,
+    }]);
+  });
+
+  test('Check if order indexes of unlocked fields change correctly after reorder', () => {
+    event = {columns: [{
+      editable: false,
+      field: 'name',
+      filterable: true,
+      included: true,
+      lockable: true,
+      locked: true,
+      orderIndex: 0,
+      sortable: true,
+      title: 'Location',
+      width: 200,
+    },
+    {
+      editable: false,
+      field: 'description',
+      filterable: true,
+      included: true,
+      lockable: true,
+      locked: true,
+      orderIndex: 1,
+      sortable: true,
+      title: 'Location Description',
+      width: 200,
+    },
+    {
+      editable: false,
+      field: 'orghierarchylevel_1',
+      filterable: true,
+      included: true,
+      lockable: true,
+      locked: false,
+      orderIndex: 4,
+      sortable: true,
+      title: 'Brand',
+      width: 200,
+    },
+    {
+      editable: false,
+      field: 'orghierarchylevel_2',
+      filterable: true,
+      included: true,
+      lockable: true,
+      locked: false,
+      orderIndex: 2,
+      sortable: true,
+      title: 'New Brand',
+      width: 200,
+    },
+    {
+      editable: false,
+      field: 'orghierarchylevel_3',
+      filterable: true,
+      included: true,
+      lockable: true,
+      locked: false,
+      orderIndex: 3,
+      sortable: true,
+      title: 'Newest brand',
+      width: 200,
+    },
+    {
+      className: '',
+      editor: 'boolean',
+      field: 'attribute_2887',
+      filterable: true,
+      included: true,
+      lockable: true,
+      locked: false,
+      orderIndex: 5,
+      sortable: false,
+      title: 'ALWAYS INCLUDED',
+      width: 170,
+    },
+    ]};
+    const reorderedColumnsData = reorderColumns(event, originalColumnsData);
+    const unlockedColumns = event.columns.filter(c => !c.locked);
+    unlockedColumns.forEach(column => {
+      const reorderedColumn = reorderedColumnsData.find(c => c.get('field') === column.field);
+      expect(column.orderIndex).toEqual(reorderedColumn.get('orderIndex'));
+    });
+  });
+
+  test('Check the sequence of the columns after reordering is complete [locked first and then unlocked]', () => {
+    event = {columns: [{
+      editable: false,
+      field: 'name',
+      filterable: true,
+      included: true,
+      lockable: true,
+      locked: true,
+      orderIndex: 0,
+      sortable: true,
+      title: 'Location',
+      width: 200,
+    },
+    {
+      editable: false,
+      field: 'description',
+      filterable: true,
+      included: true,
+      lockable: true,
+      locked: true,
+      orderIndex: 1,
+      sortable: true,
+      title: 'Location Description',
+      width: 200,
+    },
+    {
+      editable: false,
+      field: 'orghierarchylevel_1',
+      filterable: true,
+      included: true,
+      lockable: true,
+      locked: false,
+      orderIndex: 4,
+      sortable: true,
+      title: 'Brand',
+      width: 200,
+    },
+    {
+      editable: false,
+      field: 'orghierarchylevel_2',
+      filterable: true,
+      included: true,
+      lockable: true,
+      locked: false,
+      orderIndex: 2,
+      sortable: true,
+      title: 'New Brand',
+      width: 200,
+    },
+    {
+      editable: false,
+      field: 'orghierarchylevel_3',
+      filterable: true,
+      included: true,
+      lockable: true,
+      locked: false,
+      orderIndex: 3,
+      sortable: true,
+      title: 'Newest brand',
+      width: 200,
+    },
+    {
+      className: '',
+      editor: 'boolean',
+      field: 'attribute_2887',
+      filterable: true,
+      included: true,
+      lockable: true,
+      locked: false,
+      orderIndex: 5,
+      sortable: false,
+      title: 'ALWAYS INCLUDED',
+      width: 170,
+    },
+    ]};
+    const reorderedColumnsData = reorderColumns(event, originalColumnsData);
+    reorderedColumnsData.forEach(column => {
+      if (column.get('locked')) {
+        expect(column.get('orderIndex')).toBeLessThanOrEqual(1);
+      } else {
+        expect(column.get('orderIndex')).toBeGreaterThanOrEqual(1);
+      }
+    });
+  });
+
+  test('Check if after hiding one unlocked column at position 4, reordering of unlocked column works correctly [order indexes updates correctly]', () => {
+    event = {columns: [{
+      editable: false,
+      field: 'name',
+      filterable: true,
+      included: true,
+      lockable: true,
+      locked: true,
+      orderIndex: 0,
+      sortable: true,
+      title: 'Location',
+      width: 200,
+    },
+    {
+      editable: false,
+      field: 'description',
+      filterable: true,
+      included: true,
+      lockable: true,
+      locked: true,
+      orderIndex: 1,
+      sortable: true,
+      title: 'Location Description',
+      width: 200,
+    },
+    {
+      editable: false,
+      field: 'orghierarchylevel_1',
+      filterable: true,
+      included: true,
+      lockable: true,
+      locked: false,
+      orderIndex: 5,
+      sortable: true,
+      title: 'Brand',
+      width: 200,
+    },
+    {
+      editable: false,
+      field: 'orghierarchylevel_2',
+      filterable: true,
+      included: true,
+      lockable: true,
+      locked: false,
+      orderIndex: 2,
+      sortable: true,
+      title: 'New Brand',
+      width: 200,
+    },
+    {
+      editable: false,
+      field: 'orghierarchylevel_3',
+      filterable: true,
+      included: false,
+      lockable: true,
+      locked: false,
+      orderIndex: 3,
+      sortable: true,
+      title: 'Newest brand',
+      width: 200,
+    },
+    {
+      className: '',
+      editor: 'boolean',
+      field: 'attribute_2887',
+      filterable: true,
+      included: true,
+      lockable: true,
+      locked: false,
+      orderIndex: 4,
+      sortable: false,
+      title: 'ALWAYS INCLUDED',
+      width: 170,
+    },
+    ]};
+    let clonedOrignalColumnsData = fromJS(_.cloneDeep(originalColumnsData));
+    clonedOrignalColumnsData = clonedOrignalColumnsData.map(column => (column.get('orderIndex') === 4 ? column.set('included', false) : column));
+
+    const reorderedColumnsData = reorderColumns(event, clonedOrignalColumnsData);
+    const unlockedColumns = event.columns.filter(c => !c.locked);
+    unlockedColumns.forEach(column => {
+      const reorderedColumn = reorderedColumnsData.find(c => c.get('field') === column.field);
+      expect(column.orderIndex).toEqual(reorderedColumn.get('orderIndex'));
+    });
+  });
+
+  test('Check if the number of columns remain the same after reordering unlocked columns', () => {
+    event = {columns: [{
+      editable: false,
+      field: 'name',
+      filterable: true,
+      included: true,
+      lockable: true,
+      locked: true,
+      orderIndex: 0,
+      sortable: true,
+      title: 'Location',
+      width: 200,
+    },
+    {
+      editable: false,
+      field: 'description',
+      filterable: true,
+      included: true,
+      lockable: true,
+      locked: true,
+      orderIndex: 1,
+      sortable: true,
+      title: 'Location Description',
+      width: 200,
+    },
+    {
+      editable: false,
+      field: 'orghierarchylevel_1',
+      filterable: true,
+      included: true,
+      lockable: true,
+      locked: false,
+      orderIndex: 5,
+      sortable: true,
+      title: 'Brand',
+      width: 200,
+    },
+    {
+      editable: false,
+      field: 'orghierarchylevel_2',
+      filterable: true,
+      included: true,
+      lockable: true,
+      locked: false,
+      orderIndex: 2,
+      sortable: true,
+      title: 'New Brand',
+      width: 200,
+    },
+    {
+      editable: false,
+      field: 'orghierarchylevel_3',
+      filterable: true,
+      included: true,
+      lockable: true,
+      locked: false,
+      orderIndex: 3,
+      sortable: true,
+      title: 'Newest brand',
+      width: 200,
+    },
+    {
+      className: '',
+      editor: 'boolean',
+      field: 'attribute_2887',
+      filterable: true,
+      included: true,
+      lockable: true,
+      locked: false,
+      orderIndex: 4,
+      sortable: false,
+      title: 'ALWAYS INCLUDED',
+      width: 170,
+    },
+    ]};
+    const reorderedColumnsData = reorderColumns(event, originalColumnsData);
+    expect(reorderedColumnsData.size).toEqual(originalColumnsData.size);
+  });
+
+  test('Check if unlocked column at position 4 does not reorder between locked columns at position 1 & 2', () => {
+    event = {columns: [{
+      editable: false,
+      field: 'name',
+      filterable: true,
+      included: true,
+      lockable: true,
+      locked: true,
+      orderIndex: 0,
+      sortable: true,
+      title: 'Location',
+      width: 200,
+    },
+    {
+      editable: false,
+      field: 'description',
+      filterable: true,
+      included: true,
+      lockable: true,
+      locked: true,
+      orderIndex: 4,
+      sortable: true,
+      title: 'Location Description',
+      width: 200,
+    },
+    {
+      editable: false,
+      field: 'orghierarchylevel_1',
+      filterable: true,
+      included: true,
+      lockable: true,
+      locked: false,
+      orderIndex: 1,
+      sortable: true,
+      title: 'Brand',
+      width: 200,
+    },
+    {
+      editable: false,
+      field: 'orghierarchylevel_2',
+      filterable: true,
+      included: true,
+      lockable: true,
+      locked: false,
+      orderIndex: 2,
+      sortable: true,
+      title: 'New Brand',
+      width: 200,
+    },
+    {
+      editable: false,
+      field: 'orghierarchylevel_3',
+      filterable: true,
+      included: true,
+      lockable: true,
+      locked: false,
+      orderIndex: 3,
+      sortable: true,
+      title: 'Newest brand',
+      width: 200,
+    },
+    {
+      className: '',
+      editor: 'boolean',
+      field: 'attribute_2887',
+      filterable: true,
+      included: true,
+      lockable: true,
+      locked: false,
+      orderIndex: 5,
+      sortable: false,
+      title: 'ALWAYS INCLUDED',
+      width: 170,
+    },
+    ]};
+    const reorderedColumnsData = reorderColumns(event, originalColumnsData);
+    reorderedColumnsData.forEach(column => {
+      const originalColumn = originalColumnsData.find(c => c.get('field') === column.get('field'));
+      expect(column.get('orderIndex')).toEqual(originalColumn.get('orderIndex'));
+    });
+  });
+});

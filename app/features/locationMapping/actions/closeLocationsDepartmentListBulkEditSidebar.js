@@ -1,0 +1,7 @@
+export const CLOSE_LOCATIONS_DEPARTMENT_LIST_BULK_EDIT_SIDEBAR = 'CLOSE_LOCATIONS_DEPARTMENT_LIST_BULK_EDIT_SIDEBAR';
+
+export function closeLocationsDepartmentListBulkEditSidebar() {
+  return {
+    type: CLOSE_LOCATIONS_DEPARTMENT_LIST_BULK_EDIT_SIDEBAR,
+  };
+}

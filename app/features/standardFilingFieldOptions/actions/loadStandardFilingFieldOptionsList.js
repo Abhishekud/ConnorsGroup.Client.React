@@ -1,0 +1,13 @@
+import {http} from '../../shared/services';
+
+export const LOAD_STANDARD_FILING_FIELD_OPTIONS_LIST = 'LOAD_STANDARD_FILING_FIELD_OPTIONS_LIST';
+export const LOAD_STANDARD_FILING_FIELD_OPTIONS_LIST_PENDING = `${LOAD_STANDARD_FILING_FIELD_OPTIONS_LIST}_PENDING`;
+export const LOAD_STANDARD_FILING_FIELD_OPTIONS_LIST_FULFILLED = `${LOAD_STANDARD_FILING_FIELD_OPTIONS_LIST}_FULFILLED`;
+export const LOAD_STANDARD_FILING_FIELD_OPTIONS_LIST_REJECTED = `${LOAD_STANDARD_FILING_FIELD_OPTIONS_LIST}_REJECTED`;
+
+export function loadStandardFilingFieldOptionsList(fieldId) {
+  return {
+    type: LOAD_STANDARD_FILING_FIELD_OPTIONS_LIST,
+    payload: http.get(`standard-filing-fields/${fieldId}/options/list`),
+  };
+}

@@ -1,0 +1,2 @@
+export const ALLOWED_MAX_COLUMN_LOCKS = 5;
+export const DEFAULT_GRID_COLUMN_MIN_WIDTH = 10;

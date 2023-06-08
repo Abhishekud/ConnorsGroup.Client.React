@@ -1,0 +1,13 @@
+import {http} from '../../shared/services';
+
+const POLL_BULK_EXPORT_BACKGROUND_JOB_STATUS = 'POLL_BULK_EXPORT_BACKGROUND_JOB_STATUS';
+export const POLL_BULK_EXPORT_BACKGROUND_JOB_STATUS_FULFILLED = `${POLL_BULK_EXPORT_BACKGROUND_JOB_STATUS}_FULFILLED`;
+export const POLL_BULK_EXPORT_BACKGROUND_JOB_STATUS_PENDING = `${POLL_BULK_EXPORT_BACKGROUND_JOB_STATUS}_PENDING`;
+export const POLL_BULK_EXPORT_BACKGROUND_JOB_STATUS_REJECTED = `${POLL_BULK_EXPORT_BACKGROUND_JOB_STATUS}_REJECTED`;
+
+export function pollBulkExportBackgroundJobStatus(exportRequestId) {
+  return {
+    type: POLL_BULK_EXPORT_BACKGROUND_JOB_STATUS,
+    payload: http.get(`standards/export/request-queue/${exportRequestId}`),
+  };
+}

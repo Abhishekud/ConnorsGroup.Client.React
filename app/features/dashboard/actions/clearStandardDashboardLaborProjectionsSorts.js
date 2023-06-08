@@ -1,0 +1,7 @@
+export const CLEAR_STANDARD_DASHBOARD_LABOR_PROJECTIONS_SORTS = 'CLEAR_STANDARD_DASHBOARD_LABOR_PROJECTIONS_SORTS';
+
+export function clearStandardDashboardLaborProjectionsSorts() {
+  return {
+    type: CLEAR_STANDARD_DASHBOARD_LABOR_PROJECTIONS_SORTS,
+  };
+}

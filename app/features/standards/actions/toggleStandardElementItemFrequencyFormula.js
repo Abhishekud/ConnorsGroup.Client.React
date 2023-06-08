@@ -1,0 +1,7 @@
+export const TOGGLE_STANDARD_ELEMENT_ITEM_FREQUENCY_FORMULA = 'TOGGLE_STANDARD_ELEMENT_ITEM_FREQUENCY_FORMULA';
+
+export function toggleStandardElementItemFrequencyFormula() {
+  return {
+    type: TOGGLE_STANDARD_ELEMENT_ITEM_FREQUENCY_FORMULA,
+  };
+}

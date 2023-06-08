@@ -1,0 +1,39 @@
+.standard-item-container {
+  .move-controls {
+    flex: 0 0 60px;
+    min-width: 60px;
+    margin-left: 20px;
+
+    @include flexbox(row, flex-end);
+    
+    > .move-arrows {
+      @include flexbox(column, center);
+      font-size: 2.5rem;
+
+      > .disabled {
+        color: $gray-darker;
+      }
+
+      > i:first-child {
+        margin-top: -3px;
+      }
+
+      > i:last-child {
+        margin-bottom: -3px;
+      }
+    }
+
+    > .dropdown {
+      @include flexbox(column, center);
+      height: 20px;
+      margin-top: 8px;
+
+      > .dropdown-toggle {
+        color: $text-color;
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0 15px;
+      }
+    }
+  }
+}

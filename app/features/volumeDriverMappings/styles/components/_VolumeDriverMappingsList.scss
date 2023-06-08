@@ -1,0 +1,16 @@
+.volumeDriverMappings-list-page {
+  div.volume-driver-mapping-value {
+  
+    text-align: right;
+  }
+  .departments-selector {
+    width: $dropdown-page-selector-width;
+    margin-bottom: 0;
+    margin-right: 15px;
+  }
+  .volume-driver-mapping-grid-header-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+}

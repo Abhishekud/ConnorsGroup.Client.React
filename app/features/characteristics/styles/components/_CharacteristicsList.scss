@@ -1,0 +1,32 @@
+.characteristics-list-page {
+  div.characteristic-value {
+    text-align: right;
+  }
+
+  .departments-selector {
+    width: $dropdown-page-selector-width;
+    margin-bottom: 0;
+    margin-right: 15px;
+  }
+
+  .null-cell-value {
+    background-color: $null-value;
+  }
+  .characteristics-grid-header-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 9px;
+}
+.column-lock-warning {
+  margin-bottom: 5px;
+}
+.k-alt .neverSpecifiedCell {
+  background-color: rgb(239, 212, 201)!important;
+}
+tr:not(.k-alt) .neverSpecifiedCell {
+  background-color: rgb(246, 219, 208);
+}
+tr:hover .neverSpecifiedCell {
+  background-color:rgb(232, 218, 178)!important;
+}
+}

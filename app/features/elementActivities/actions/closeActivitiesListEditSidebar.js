@@ -1,0 +1,7 @@
+export const CLOSE_ELEMENT_ACTIVITIES_LIST_EDIT_SIDEBAR = 'CLOSE_ELEMENT_ACTIVITIES_LIST_EDIT_SIDEBAR';
+
+export function closeActivitiesListEditSidebar() {
+  return {
+    type: CLOSE_ELEMENT_ACTIVITIES_LIST_EDIT_SIDEBAR,
+  };
+}

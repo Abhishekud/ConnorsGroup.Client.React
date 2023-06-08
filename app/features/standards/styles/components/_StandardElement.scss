@@ -1,0 +1,224 @@
+.standard-items-container > .standard-item-container {
+  .standard-element-container > .standard-element {
+    @include flexbox(column, flex-start);
+
+    .form-group {
+      margin: 0;
+    }
+
+    .disable-drag-icon-holder {
+      color: $gray-darker;
+      cursor: not-allowed;
+    }
+    
+    .drag-icon-holder {
+      min-height: 44px;
+      padding: 10px 0 10px 10px;
+    }
+
+    > .content {
+      @include flexbox(row, flex-start);
+
+      > .bulk-edit-checkbox, .drag-icon-holder-div {
+        flex: 0 0 15px;
+        @include flexbox(column, center);
+        font-weight: bold;
+        margin-right: 10px;
+        margin-left: 10px;
+
+        i.fa {
+          padding-top: 1px;
+        }
+      }
+
+      > .standard-item-index {
+        flex: 0 0 10px;
+        @include flexbox(column, center);
+        font-weight: bold;
+        margin-right: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+        min-width: 50px;
+        text-align: center;
+      }
+
+      > .identifier-and-time-container {
+        flex: 0 0 85px;
+        max-width: 85px;
+        margin-right: 20px;
+        margin-top: 12px;
+        margin-bottom: 12px;
+        text-align: center;
+
+        @include flexbox(column, flex-start);
+
+        > span {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          word-wrap: normal;
+        }
+
+        > .element-id {
+          margin: 0;
+          height: 30px;
+          font-weight: bold;
+        }
+      }
+
+      > .details-container {
+        flex: 1 400px;
+        min-width: 400px;
+        margin-top: 12px;
+        margin-bottom: 12px;
+
+        @include flexbox(column, center);
+
+        > .header {
+          margin: 0;
+          font-weight: bold;
+
+          @include flexbox(row, flex-start, center);
+
+          > .element-name {
+            cursor: pointer;
+          }
+
+          > span {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            word-wrap: normal;
+            max-width: 600px;
+
+            &:hover + span.buttons {
+              opacity: 1;
+              transition: opacity .5s linear;
+            }
+          }
+
+          > span.buttons {
+            opacity: 1;
+            margin: -7px 0 -7px;
+
+            > button {
+              margin-left: 10px;
+            }
+
+            &:hover {
+              opacity: 1;
+              transition: opacity .5s linear;
+            }
+          }
+        }
+
+        > .details {
+          @include flexbox(row, flex-start, center);
+          margin-top: 5px;
+
+          > .frequency-formula {
+            flex: 4 1;
+            margin-right: 10px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            word-wrap: normal;
+            max-width: 600px;
+          }
+
+          > .frequency-value {
+            flex: 1 1 80px;
+            margin: 0 10px;
+            text-align: right;
+          }
+
+          > .unit-of-measure {
+            flex: 1 1 150px;
+            margin: 0 10px;
+          }
+
+          > .comment-indicator {
+            flex: 0 22px;
+            margin: -3px 10px -2px;
+            font-size: 1.25em;
+          }
+
+          > .edit-buttons {
+            margin: -3px 10px -2px;
+            
+            button {
+              border: 1px solid #d5d5d5;
+              border-radius: 5px;
+              color: black;
+              padding: 1px 2px;
+              text-decoration: none;
+              background-color: white;
+            }
+          }
+
+          > .toggle-switch-indicator {
+            flex: 0 28px;
+            margin: -6px 10px -8px;
+            font-size: 1.5em;
+          }
+
+          > .normal-time {
+            flex: 1 100px;
+            max-width: 125px;
+            text-align: right;
+            font-weight: bold;
+            margin-left: 10px;
+          }
+        }
+      }
+
+      > .move-controls-container {
+        flex: 0 0 200px;
+
+        margin-left: 5px;
+      }
+    }
+
+    > .comment {
+      padding: 15px;
+      border-top: solid 1px $gray-light;
+
+      @include flexbox(row, flex-start, center);
+
+      > .form-group {
+        flex: 1;
+        margin-right: 20px;
+      }
+
+      > .actions {
+        flex: 0 0 75px;
+
+        @include flexbox(column, space-between, stretch);
+
+        > button:last-child {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+
+  > .standard-element-container > .standard-element {
+    border-radius: 4px;
+    border: solid 2px $gray;
+  }
+
+  > .standard-element-group-container > .standard-element-group > .standard-element-container > .standard-element {
+    border-top: solid 1px $gray-light;
+
+    background-color: $white;
+
+    > .content {
+      background-color: inherit;
+    }
+  }
+}
+
+.standard-element-container > .standard-element {
+  border-top: 1px solid rgb(234, 234, 234);
+}
+
+.standard-element-container > .dragged-item-bg {
+  background-color: #e8dab2 !important;
+}

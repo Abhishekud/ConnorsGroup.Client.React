@@ -1,0 +1,17 @@
+.location-mapping-list-page {
+  .departments-selector {
+    select {
+      width: $dropdown-page-selector-width;
+    }
+  }
+  .departments-selector {
+    width: $dropdown-page-selector-width;
+    margin-bottom: 0;
+    margin-right: 15px;
+  }
+  .location-mapping-grid-header-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+}

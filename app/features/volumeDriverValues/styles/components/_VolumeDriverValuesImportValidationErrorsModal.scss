@@ -1,0 +1,16 @@
+.volume-driver-values-import-errors-modal {
+  .modal-body > div {
+    overflow: auto;
+    max-height: 350px;
+  }
+
+  .volume-driver-values-import-field {
+    > h4 {
+      font-weight: bold;
+    }
+
+    > div {
+      margin-left: 20px;
+    }
+  }
+}

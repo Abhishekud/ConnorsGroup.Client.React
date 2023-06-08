@@ -1,0 +1,4 @@
+.page {
+  @include flexbox(column);
+  height: 100%;
+}

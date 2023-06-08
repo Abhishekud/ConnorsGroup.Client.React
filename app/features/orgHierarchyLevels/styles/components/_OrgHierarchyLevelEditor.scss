@@ -1,0 +1,39 @@
+.org-hierarchy-level-container > .org-hierarchy-level-editor {
+  background-color: $gray-lighter;
+  border: 2px solid $gray;
+  border-radius: 5px;
+  padding: 6px 0;
+  overflow: hidden;
+
+  @include flexbox(row, flex-start, center);
+
+  > .number {
+    flex: 0 0 32px;
+    font-weight: bold;
+    margin: 0 10px;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  > .form-group.name {
+    // This odd combination of properties is to
+    // fix an issue in Microsoft Edge that caused
+    // the input to not shrink correctly.
+    flex: 0 1 100%;
+    max-width: 800px;
+    margin: 0 10px;
+
+    > .validation-error.help-block {
+      margin-bottom: 0;
+    }
+  }
+
+  > .header-actions {
+    flex: 1 0 auto;
+    margin-right: 10px;
+
+    > button:last-of-type {
+      margin-left: 10px;
+    }
+  }
+}

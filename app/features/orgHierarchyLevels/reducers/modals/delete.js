@@ -1,0 +1,52 @@
+import {Map, fromJS} from 'immutable';
+import {
+  CANCEL_DELETE_ORG_HIERARCHY_LEVEL,
+  SHOW_DELETE_ORG_HIERARCHY_LEVEL,
+  DELETE_ORG_HIERARCHY_LEVEL_FULFILLED,
+  DELETE_ORG_HIERARCHY_LEVEL_PENDING,
+  DELETE_ORG_HIERARCHY_LEVEL_REJECTED,
+} from '../../actions';
+
+const initialState = new Map({
+  show: false,
+  deleting: false,
+  validationErrors: Map(),
+  model: new Map({
+    id: null,
+    name: null,
+  }),
+});
+
+export default function (state = initialState, action) {
+  switch (action.type) {
+    case SHOW_DELETE_ORG_HIERARCHY_LEVEL: {
+      const {payload} = action;
+      const model = Map({
+        id: payload.get('id'),
+        name: payload.get('name'),
+      });
+
+      return state.withMutations(map =>
+        map.set('show', true)
+          .set('model', model));
+    }
+
+    case DELETE_ORG_HIERARCHY_LEVEL_PENDING:
+      return state.set('deleting', true);
+
+    case CANCEL_DELETE_ORG_HIERARCHY_LEVEL:
+    case DELETE_ORG_HIERARCHY_LEVEL_FULFILLED:
+      return initialState;
+
+    case DELETE_ORG_HIERARCHY_LEVEL_REJECTED:
+      return state.withMutations(map => {
+        map.set('deleting', false);
+
+        const {status, data} = action.payload.response || {};
+        map.set('validationErrors', status === 400 ? fromJS(data) : Map());
+      });
+
+    default:
+      return state;
+  }
+}

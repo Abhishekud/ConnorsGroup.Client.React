@@ -1,0 +1,90 @@
+.non-most-steps-container > .non-most-step-container > .non-most-step-editor > .details {
+  border: 2px solid $gray;
+  border-top-style: none;
+  padding: 0 0 10px;
+  overflow: hidden;
+
+  @include flexbox(row, flex-start, center);
+  flex-wrap: wrap;
+
+  > .simo-toggle {
+    flex: 1 95px;
+    min-width: 95px;
+    color: $gray-dark;
+    margin: 10px 10px 0;
+
+    @include flexbox(row, center, center);
+
+    > i {
+      margin-left: 15px;
+      font-size: 3.5rem;
+    }
+
+    > i.fa-toggle-on {
+      color: $text-color;
+    }
+  }
+
+  > .frequency {
+    flex: 1 185px;
+    min-width: 185px;
+    color: $gray-dark;
+    margin: 10px 10px 0;
+
+    @include flexbox(row, center, center);
+
+    > label {
+      margin-bottom: 0;
+    }
+
+    > input {
+      flex: 0 0 110px;
+      max-width: 110px;
+      text-align: right;
+      margin-left: 15px;
+    }
+
+    > .validation-error {
+      margin: 0 0 0 5px;
+    }
+  }
+
+  > .tmus {
+    flex: 1 150px;
+    min-width: 150px;
+    color: $gray-dark;
+    margin: 10px 10px 0;
+
+    @include flexbox(row, center, center);
+
+    > .value {
+      margin-left: 15px;
+      color: $text-color;
+    }
+
+    > label {
+      margin-bottom: 0;
+    }
+
+    > input {
+      flex: 0 0 110px;
+      max-width: 110px;
+      text-align: right;
+      margin-left: 15px;
+    }
+  }
+
+  > .time {
+    flex: 1 160px;
+    min-width: 160px;
+    color: $gray-dark;
+    margin: 10px 10px 0;
+
+    @include flexbox(row, center, baseline);
+
+    > .value {
+      margin-left: 15px;
+      color: $text-color;
+    }
+  }
+}

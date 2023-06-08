@@ -1,0 +1,7 @@
+export const TOGGLE_CONFIRM_DEFAULT_VOLUME_DRIVER_VALUE_SET = 'TOGGLE_CONFIRM_DEFAULT_VOLUME_DRIVER_VALUE_SET';
+
+export function toggleConfirmDefaultVolumeDriverValueSet() {
+  return {
+    type: TOGGLE_CONFIRM_DEFAULT_VOLUME_DRIVER_VALUE_SET,
+  };
+}

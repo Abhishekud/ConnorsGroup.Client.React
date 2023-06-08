@@ -1,0 +1,7 @@
+export const TOGGLE_CHARACTERISTICS_LIST_FILTERS_SIDEBAR = 'TOGGLE_CHARACTERISTICS_LIST_FILTERS_SIDEBAR';
+
+export function toggleCharacteristicsListFiltersSidebar() {
+  return {
+    type: TOGGLE_CHARACTERISTICS_LIST_FILTERS_SIDEBAR,
+  };
+}

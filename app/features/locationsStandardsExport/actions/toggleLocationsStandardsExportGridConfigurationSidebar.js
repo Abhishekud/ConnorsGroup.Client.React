@@ -1,0 +1,8 @@
+export const TOGGLE_LOCATIONS_STANDARDS_EXPORT_GRID_CONFIGURATION_SIDEBAR = 'TOGGLE_LOCATIONS_STANDARDS_EXPORT_GRID_CONFIGURATION_SIDEBAR';
+
+export function toggleLocationsStandardsExportGridConfigurationSidebar() {
+  return {
+    type: TOGGLE_LOCATIONS_STANDARDS_EXPORT_GRID_CONFIGURATION_SIDEBAR,
+    payload: {},
+  };
+}

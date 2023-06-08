@@ -1,0 +1,27 @@
+.page > .page-header {
+  > .page-title-container {
+    margin: 0 30px;
+    flex: 1;
+    text-align: center;
+    font-weight: bold;
+  
+    > .page-title {
+      margin: 0;
+      padding: 0 15px;
+      font-weight: bold;
+      text-align: center;
+
+      > .title-status {
+        font-weight: normal;
+        font-style: italic;
+        font-size: 2rem;
+      }
+
+      > .title-subtext {
+        font-weight: normal;
+        font-style: normal;
+        font-size: 2rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+.page > .page-body > .sidebar {
+  position: relative;
+  flex: 0 0 400px;
+  max-width: 400px;
+  @include flexbox(column, flex-start);
+
+  padding: 30px;
+
+  border-left: 1px solid $gray-light;
+  overflow: auto;
+
+  > i.close-sidebar {
+    position: absolute;
+    top: 13px;
+    right: 15px;
+  }
+
+  .controlled-actions {
+    .delete {
+      float: right;
+    }
+  }
+
+  .sidebar-section {
+    flex: 0 0 auto;
+    @include flexbox(column);
+
+    > .sidebar-header {
+      flex: 0 0 45px;
+      @include flexbox(row, space-between, center);
+      margin-bottom: 5px;
+
+      > i {
+        padding-top: 7px;
+        padding-bottom: 7px;
+        padding-left: 7px;
+      }
+
+      > .sidebar-header-actions {
+        padding-left: 15px;
+        flex: 1;
+
+        .btn-link.cancel {
+          color: $gray-darker;
+        }
+      }
+    }
+  }
+}
+
+.page > .page-body > .sidebar {
+  overflow: visible !important;
+  padding: 0;
+
+  > .sidebar-scrollable {
+    overflow: auto;
+    width: 399px;
+    padding: 0 25px 30px 25px;
+  }
+
+  > .action-buttons {
+    padding: 30px 25px 15px 25px;
+  }
+
+  .action-buttons-none {
+    padding-top: 10px;
+  }
+}

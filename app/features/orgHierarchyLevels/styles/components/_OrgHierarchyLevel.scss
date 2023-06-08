@@ -1,0 +1,45 @@
+.org-hierarchy-level-container > .org-hierarchy-level {
+  border-radius: 5px;
+  background-color: $gray-lighter;
+  border: 2px solid $gray;
+  padding: 6px 0;
+
+  @include flexbox(row, flex-start, center);
+
+  > .number {
+    flex: 0 0 32px;
+    font-weight: bold;
+    margin: 0 10px;
+    text-align: center;
+  }
+
+  > .name {
+    font-weight: bold;
+    flex: 1;
+    min-width: 100px;
+    margin: 0 10px;
+
+    @include flexbox(row, flex-start, center);
+
+    > span {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      word-wrap: normal;
+      padding-right: 10px;
+
+      &:hover + button {
+        opacity: 1;
+        transition: opacity .5s linear;
+      }
+    }
+
+    > button {
+      opacity: 0;
+
+      &:hover {
+        opacity: 1;
+        transition: opacity .5s linear;
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.location-profile-list-entry-editor {
+  padding: 10px;
+  background-color: $gray-light;
+  border-radius: 5px;
+  margin-bottom: 5px;
+
+  > .actions {
+    flex: 0 auto;
+    @include flexbox(row, space-between, center);
+  }
+
+  .tag-item {
+    background-color: $gray-dark;
+  }
+}

@@ -1,0 +1,7 @@
+export const HIDE_STANDARD_ELEMENT_ITEM_FREQUENCY_FORMULA = 'HIDE_STANDARD_ELEMENT_ITEM_FREQUENCY_FORMULA';
+
+export function hideEditFrequencyFormula() {
+  return {
+    type: HIDE_STANDARD_ELEMENT_ITEM_FREQUENCY_FORMULA,
+  };
+}

@@ -1,0 +1,43 @@
+.org-hierarchy-level-container {
+  > .org-hierarchy-level, > .org-hierarchy-level-editor {
+    > .move-controls {
+      flex: 0 0 55px;
+      min-width: 55px;
+      margin: 0 0 0 10px;
+
+      @include flexbox(row, flex-end);
+
+      > .move-arrows {
+        @include flexbox(column, center);
+        font-size: 2.5rem;
+
+        > .disabled {
+          color: $gray-darker;
+        }
+
+        > i:first-child {
+          margin-top: -3px;
+        }
+
+        > i:last-child {
+          margin-bottom: -3px;
+        }
+      }
+
+      > .delete-container {
+        @include flexbox(column, center);
+
+        > i {
+          font-size: 2rem;
+          margin-left: 15px;
+          margin-right: 10px;
+
+          &.disabled {
+            color: $gray-dark;
+            cursor: not-allowed;
+          }
+        }
+      }
+    }
+  }
+}

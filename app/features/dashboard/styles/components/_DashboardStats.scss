@@ -1,0 +1,100 @@
+.dashboard-page {
+  .main-content {
+    padding-top: 15px !important;
+  }
+}
+
+.dashboard .dashboard-stats {
+  min-width: 950px;
+  flex: 0 0 auto;
+
+  @include flexbox(row);
+  border-bottom: 1px solid $gray;
+  padding-bottom: 15px;
+
+  .dashboard-stat {
+    flex: 1;
+  }
+
+  .dashboard-stat-wide {
+    flex: 2;
+  }
+
+  .dashboard-stat,
+  .dashboard-stat-wide {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .dashboard-stat-item {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: flex-end;
+
+      .stat-number {
+        flex: 8;
+        font-weight: bold;
+        font-size: 5rem;
+        padding-right: 12px;
+        text-align: right;
+        text-align: center;
+      }
+    }
+
+    .stat-name {
+      flex: 8;
+      color: $gray;
+      font-size: 2rem;
+      margin-bottom: 12px;
+      line-height: 1em;
+      text-align: center;
+    }
+
+    .standard-stats {
+      flex: 10;
+      display: flex;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      position: static;
+      overflow: hidden;
+      width: 200px;
+      height: 10px;
+      top: -25px;
+
+      .Draft,
+      .ReadyForQA,
+      .Production,
+      .Archive {
+        display: inline-block;
+        height: 20px;
+        top: -6px;
+        position: relative;
+      }
+
+      .Draft {
+        background-color: $status-draft;
+      }
+
+      .ReadyForQA {
+        background-color: $status-qa;
+      }
+
+      .Archive {
+        background-color: $status-archive;
+      }
+
+      .Production {
+        background-color: $status-production-dashboard;
+      }
+    }
+  }
+
+  .dashboard-stat-border {
+    margin-left: 10px;
+    width: 1px;
+    height: 70px;
+    background-color: $gray;
+  }
+}

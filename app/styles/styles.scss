@@ -1,0 +1,361 @@
+$font-family-sans-serif: 'Fira Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-size-base: 16px;
+$icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
+$fa-font-path: '~font-awesome/fonts/';
+
+$dark-blue: #9eb0b7;
+$blue: #c0d6df;
+$darker-blue: darken($blue, 3%);
+$light-blue: #dce8ed;
+$darker-light-blue: darken($light-blue, 3%);
+
+$brand-primary: #dd6e42;
+$brand-success: #839903;
+$brand-info: #17bebb;
+$brand-warning: #f5bb00;
+$brand-danger: #e03131;
+
+$gray-darker: #777;
+$gray-dark: #aaa;
+$gray: #d5d5d5;
+$gray-light: #eaeaea;
+$gray-lighter: #f1f1f1;
+
+$text-color: #333;
+$input-color: #555;
+$input-border-focus: #c0d6ff;
+
+$tooltip-bg: #555;
+$tooltip-arrow-color: #555;
+$tooltip-color: #eaeaea;
+
+$accent: #e8dab2;
+$grid-selected-bg: #e8dab2;
+$hover-bg: #e8dab2;
+
+$active-lighter: #f2ead5;
+$active-light: rgba($active-lighter, .65);
+$active-dark: #e8dab2;
+
+$null-value: rgba(#dd6e42, .25);
+
+$popup-error: #a94442;
+
+$dropdown-link-color: $gray-darker;
+$dropdown-link-hover-color: $gray-darker;
+$dropdown-page-selector-width: 300px;
+
+$status-draft: rgba(#beb392, .75);
+$status-qa: rgba(#f2ead5, .75);
+$status-archive: rgba(#dce8ed, .75);
+$status-production-dashboard: rgba(#cccccc, .75);
+
+@import '~bootstrap-sass/assets/stylesheets/_bootstrap';
+@import '~@progress/kendo-theme-default/scss/all';
+@import '~font-awesome/scss/font-awesome';
+@import '~toastr/toastr';
+@import '~react-virtualized/styles.css';
+@import '~react-datepicker/dist/react-datepicker.css';
+
+@import '_mixins';
+@import '_react-virtualized-table';
+
+@import '../features/adminTools/styles/_index';
+@import '../features/allowanceRests/styles/_index';
+@import '../features/allowances/styles/_index';
+@import '../features/attributes/styles/_index';
+@import '../features/authentication/styles/_index';
+@import '../features/characteristics/styles/_index';
+@import '../features/classifications/styles/_index';
+@import '../features/customizableGrid/styles/_index';
+@import '../features/dashboard/styles/_index';
+@import '../features/downloads/styles/_index';
+@import '../features/elementListManagement/styles/_index';
+@import '../features/elementMassUpdate/styles/_index';
+@import '../features/elementUnitsOfMeasure/styles/_index';
+@import '../features/elements/styles/_index';
+@import '../features/forms/styles/_index';
+@import '../features/industryStandards/styles/_index';
+@import '../features/jobClasses/styles/_index';
+@import '../features/laborCategories/styles/_index';
+@import '../features/layout/styles/_index';
+@import '../features/locations/styles/_index';
+@import '../features/locationMapping/styles/_index';
+@import '../features/locationsStandardsExport/styles/_index';
+@import '../features/mostAnalysis/styles/_index';
+@import '../features/nonMOSTAnalysis/styles/_index';
+@import '../features/orgHierarchyLevelOptions/styles/_index';
+@import '../features/orgHierarchyLevels/styles/_index';
+@import '../features/partFamilies/styles/_index';
+@import '../features/partFields/styles/_index';
+@import '../features/parts/styles/_index';
+@import '../features/passwordManagement/styles/_index';
+@import '../features/shared/styles/_index';
+@import '../features/standardFilingFieldOptions/styles/_index';
+@import '../features/standardFilingFields/styles/_index';
+@import '../features/standards/styles/_index';
+@import '../features/unitsOfMeasure/styles/_index';
+@import '../features/users/styles/_index';
+@import '../features/volumeDriverMappings/styles/_index';
+@import '../features/volumeDriverMappingVariables/styles/_index';
+@import '../features/volumeDriverValues/styles/_index';
+@import '../features/volumeDriverValueSets/styles/_index';
+@import '../features/kronos/laborPeriod/styles/index';
+@import '../features/kronos/laborStandard/styles/index';
+@import '../features/kronos/shared/styles/index';
+@import '../features/rolePermissions/styles/_index';
+@import '../features/tumbleweed/styles/_index';
+@import '../features/industryAllowances/styles/_index';
+
+html,
+body,
+div#app {
+  height: 100%;
+  overflow: hidden;
+
+  @media print {
+    height: auto;
+    overflow-y: scroll;
+  }
+}
+
+.modal>.modal-dialog>.modal-content {
+  .modal-header {
+    border-bottom-style: none;
+    padding-bottom: 0;
+  }
+
+  .modal-body>form>fieldset>.form-group:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .modal-processing {
+    position: relative;
+    top: -10px;
+    margin: 0 20px;
+    padding-top: 0;
+  }
+
+  .alert {
+    margin-bottom: 10px;
+  }
+
+  .modal-footer {
+    border-top-style: none;
+    padding-top: 0;
+  }
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+textarea,
+input {
+  border: solid 2px $gray-light;
+  border-radius: 4px;
+  width: 100%;
+  color: $text-color;
+  padding: 4px;
+  font-size: 13px;
+}
+
+input[type="checkbox"] {
+  width: 13px;
+
+  &:focus {
+    //outline: none;
+    outline-offset: 2px;
+  }
+}
+
+textarea:focus,
+textarea:hover,
+input:focus,
+input:hover,
+select:focus,
+select:hover,
+.k-textbox:focus,
+.k-textbox:hover {
+  border: solid 3px $input-border-focus;
+  outline: none;
+}
+
+input:focus.form-control,
+select:focus.form-control {
+  padding: 5px 10px;
+}
+
+.btn-wheat {
+  @include button-variant($btn-default-color, $hover-bg, $btn-default-border);
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.disabled {
+  cursor: not-allowed;
+}
+
+.disabled-input>input,
+.disabled-input>input:focus {
+  cursor: default !important;
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  border-color: #ccc;
+}
+
+.report-button,
+.time-format-selector {
+  margin-left: 15px;
+}
+
+i.disabled {
+  color: $gray-dark;
+}
+
+.archive-warning {
+  color: $brand-danger;
+
+  &+.archive-warning {
+    margin-top: 15px;
+  }
+}
+
+.warning,
+.wfd-warning {
+  color: $brand-danger;
+}
+
+.input-group-addon {
+  padding: 0;
+
+  .fa {
+    padding: 9px 12px;
+  }
+}
+
+.react-datepicker__month-container {
+  min-height: 170px;
+}
+
+.size-16x16 {
+  width: 16px;
+  height: 16px;
+}
+
+.title-status {
+  font-style: italic;
+  font-size: 2rem;
+}
+
+.k-grid {
+
+  tr.k-master-row:hover,
+  tr.k-alt:hover {
+    background-color: rgb(232, 218, 178);
+  }
+
+  tr.k-master-row:hover td.k-grid-content-sticky {
+    background-color: darken(rgb(232, 218, 178), 3%);
+  }
+
+  &.k-grid-virtual .k-virtual-content {
+    tr {
+      height: 40px;
+    }
+
+    td {
+      white-space: nowrap;
+    }
+  }
+
+  tr.k-alt {
+    td.k-grid-content-sticky {
+      background-color: #ececec;
+    }
+  }
+}
+
+.k-grid-table {
+  border-style: none solid none none !important;
+  border-color: $gray !important;
+  border-width: 1px !important;
+}
+
+.k-grid-header-wrap>table {
+  border-style: none solid none none;
+  border-color: $gray ;
+  border-width: 1px;
+}
+
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
+.k-animation-container {
+  z-index: 10000;
+}
+
+.form-group .k-multiselect .k-multiselect-wrap .k-button .k-select {
+  border-radius: 10px;
+  border: rgb(51, 51, 51) 2px solid;
+  background: rgb(51, 51, 51);
+  margin-top: 2px;
+  margin-bottom: 2px;
+  margin-left: 12px;
+
+  >.k-icon.k-i-close {
+    color: white;
+    font-size: 12px;
+    opacity: .9;
+    height: 10px;
+  }
+}
+
+.k-multiselect.k-state-disabled .k-multiselect-wrap {
+  background-color: #f1f1f1 !important;
+}
+
+.btn-secondary {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+  margin-bottom: 4px;
+}
+
+.btn-secondary:hover {
+  color: #ffffff;
+  background-color: #dd6e42;
+}
+
+.k-checkbox {
+  width: 20px !important;
+  height: 20px;
+  margin: 0px !important;
+}
+
+.k-checkbox::before {
+  width: 20px;
+  height: 20px;
+  font-size: 18px;
+  top: 56%;
+  left: 56%;
+}
+
+.matrix-grid-header-checkbox>i {
+  font-size: 20px;
+}
+
+.k-grid td.k-state-selected,
+.k-grid tr.k-state-selected>td {
+  background-color: #e8dab2 ! important;
+}
+
+.k-grid a.hyperlink {
+  color: #dd6e42;
+  cursor: pointer;
+  text-decoration: underline;
+}

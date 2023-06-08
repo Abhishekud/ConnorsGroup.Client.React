@@ -1,0 +1,15 @@
+.time-component {
+    flex-flow: column;
+    display: inline-flex;
+    width: 100%;
+}
+
+.time-select {
+    flex-flow: row;
+    display: inline-flex;
+
+    .form-group {
+      width: 100%;
+    }
+}
+

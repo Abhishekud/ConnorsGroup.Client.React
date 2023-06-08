@@ -1,0 +1,7 @@
+export const CLEAR_LOCATION_DASHBOARD_LABOR_PROJECTIONS_SORTS = 'CLEAR_LOCATION_DASHBOARD_LABOR_PROJECTIONS_SORTS';
+
+export function clearLocationDashboardLaborProjectionsSorts() {
+  return {
+    type: CLEAR_LOCATION_DASHBOARD_LABOR_PROJECTIONS_SORTS,
+  };
+}

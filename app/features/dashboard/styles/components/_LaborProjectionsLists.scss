@@ -1,0 +1,16 @@
+.dashboard > .labor-projections {
+  .standard-count,
+  .department-count,
+  .labor-hours,
+  .attribute-count {
+    text-align: right;
+  }
+
+  .column-header-standard-count span,
+  .column-header-department-count span,
+  .column-header-labor-hours span,
+  .column-header-attribute-count span {
+    width: 100%;
+    text-align: right;
+  }
+}

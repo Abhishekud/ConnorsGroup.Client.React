@@ -1,0 +1,20 @@
+.volume-driver-values-list-page {
+  .dropzone-style {
+    margin-bottom: 20px;
+    text-align: center;
+    border-style: dashed;
+    cursor: pointer;
+  }
+
+  .volume-driver-value-sets-selector {
+    width: $dropdown-page-selector-width;
+    margin-bottom: 0;
+    margin-right: 15px;
+  }
+
+  .volume-driver-values-grid-header-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+}

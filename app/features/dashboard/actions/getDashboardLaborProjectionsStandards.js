@@ -1,0 +1,13 @@
+import {http} from '../../shared/services';
+
+export const GET_DASHBOARD_LABOR_PROJECTIONS_STANDARDS = 'GET_DASHBOARD_LABOR_PROJECTIONS_STANDARDS';
+export const GET_DASHBOARD_LABOR_PROJECTIONS_STANDARDS_PENDING = `${GET_DASHBOARD_LABOR_PROJECTIONS_STANDARDS}_PENDING`;
+export const GET_DASHBOARD_LABOR_PROJECTIONS_STANDARDS_FULFILLED = `${GET_DASHBOARD_LABOR_PROJECTIONS_STANDARDS}_FULFILLED`;
+export const GET_DASHBOARD_LABOR_PROJECTIONS_STANDARDS_REJECTED = `${GET_DASHBOARD_LABOR_PROJECTIONS_STANDARDS}_REJECTED`;
+
+export function getDashboardLaborProjectionsStandards(locationId, departmentId) {
+  return {
+    type: GET_DASHBOARD_LABOR_PROJECTIONS_STANDARDS,
+    payload: http.get(`dashboard/location/${locationId}/department/${departmentId}/standards`),
+  };
+}

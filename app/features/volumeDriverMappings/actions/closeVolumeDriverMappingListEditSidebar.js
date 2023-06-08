@@ -1,0 +1,7 @@
+export const CLOSE_VOLUME_DRIVER_MAPPINGS_LIST_EDIT_SIDEBAR = 'CLOSE_VOLUME_DRIVER_MAPPINGS_LIST_EDIT_SIDEBAR';
+
+export function closeVolumeDriverMappingsListEditSidebar() {
+  return {
+    type: CLOSE_VOLUME_DRIVER_MAPPINGS_LIST_EDIT_SIDEBAR,
+  };
+}

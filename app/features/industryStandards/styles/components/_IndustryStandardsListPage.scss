@@ -1,0 +1,25 @@
+.industry-standards-list-page {
+  .ReactVirtualized__Table__row {
+    cursor: pointer;
+  }
+
+  .page-header-actions {
+    > button {
+      margin-left: 20px;
+    }
+  }
+
+  .react-datepicker__input-container {
+    width: 100%;
+  }
+
+  .sidebar {
+    .sidebar-header {
+      margin-top: 30px;
+    }
+  }
+}
+
+.industry-source-selector {
+  width: $dropdown-page-selector-width;
+}

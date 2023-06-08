@@ -1,0 +1,7 @@
+export const TOGGLE_VOLUME_DRIVER_MAPPINGS_LIST_FILTERS_SIDEBAR = 'TOGGLE_VOLUME_DRIVER_MAPPINGS_LIST_FILTERS_SIDEBAR';
+
+export function toggleVolumeDriverMappingsListFiltersSidebar() {
+  return {
+    type: TOGGLE_VOLUME_DRIVER_MAPPINGS_LIST_FILTERS_SIDEBAR,
+  };
+}

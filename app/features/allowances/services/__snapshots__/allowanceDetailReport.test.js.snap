@@ -1,0 +1,1746 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Allowance Detail Report should work without allowance time 1`] = `
+{
+  "content": [
+    {
+      "layout": {
+        "hLineWidth": [Function],
+        "vLineWidth": [Function],
+      },
+      "style": "topTable",
+      "table": {
+        "body": [
+          [
+            [
+              {
+                "layout": {
+                  "hLineWidth": [Function],
+                  "vLineWidth": [Function],
+                },
+                "style": "topTable",
+                "table": {
+                  "body": [
+                    [
+                      {
+                        "border": [
+                          true,
+                          false,
+                          false,
+                          false,
+                        ],
+                        "style": "title",
+                        "text": "GAP Inc",
+                      },
+                    ],
+                    [
+                      {
+                        "border": [
+                          true,
+                          false,
+                          false,
+                          false,
+                        ],
+                        "text": "05/05/2022 04:57:31 PM",
+                      },
+                    ],
+                  ],
+                },
+              },
+            ],
+            [
+              {
+                "layout": {
+                  "hLineWidth": [Function],
+                  "vLineWidth": [Function],
+                },
+                "style": "topTable",
+                "table": {
+                  "body": [
+                    [
+                      {
+                        "border": [
+                          true,
+                          false,
+                          false,
+                          false,
+                        ],
+                        "style": "title",
+                        "text": "Name:",
+                      },
+                      {
+                        "border": [
+                          false,
+                          false,
+                          false,
+                          false,
+                        ],
+                        "style": "title",
+                        "text": "",
+                      },
+                    ],
+                  ],
+                  "widths": [
+                    65,
+                    "*",
+                  ],
+                },
+              },
+            ],
+          ],
+        ],
+        "widths": [
+          150,
+          "*",
+        ],
+      },
+    },
+    {
+      "layout": {
+        "hLineWidth": [Function],
+        "vLineWidth": [Function],
+      },
+      "style": "table",
+      "table": {
+        "body": [
+          [
+            {
+              "layout": {
+                "hLineWidth": [Function],
+                "vLineWidth": [Function],
+              },
+              "style": "table",
+              "table": {
+                "body": [
+                  [
+                    {
+                      "border": [
+                        true,
+                        false,
+                        false,
+                        false,
+                      ],
+                      "style": "title",
+                      "text": "SUMMARY",
+                    },
+                  ],
+                ],
+              },
+            },
+          ],
+        ],
+      },
+    },
+    {
+      "layout": {
+        "hLineWidth": [Function],
+        "vLineWidth": [Function],
+      },
+      "style": "subtable",
+      "table": {
+        "body": [
+          [
+            {
+              "style": "cellTitleStyle",
+              "text": "Calculated PF&D Allowance Factor",
+            },
+            {
+              "style": "cellStyleRight",
+              "text": "0.00 %",
+            },
+          ],
+          [
+            {
+              "style": "cellTitleStyle",
+              "text": "Allowance Percent",
+            },
+            {
+              "style": "cellStyleRight",
+              "text": "0.00 %",
+            },
+          ],
+          [
+            {
+              "style": "cellTitleStyle",
+              "text": "Incentive Opportunity Allowance",
+            },
+            {
+              "style": "cellStyleRight",
+              "text": "0.00 %",
+            },
+          ],
+        ],
+        "widths": [
+          160,
+          40,
+          "*",
+        ],
+      },
+    },
+    {
+      "layout": {
+        "hLineWidth": [Function],
+        "vLineWidth": [Function],
+      },
+      "style": "table",
+      "table": {
+        "body": [
+          [
+            {
+              "layout": {
+                "hLineWidth": [Function],
+                "vLineWidth": [Function],
+              },
+              "style": "table",
+              "table": {
+                "body": [
+                  [
+                    {
+                      "border": [
+                        true,
+                        false,
+                        false,
+                        false,
+                      ],
+                      "style": "title",
+                      "text": "DETAILS",
+                    },
+                  ],
+                ],
+              },
+            },
+          ],
+        ],
+        "widths": [
+          "*",
+          "*",
+        ],
+      },
+    },
+    {
+      "style": "subtable",
+      "table": {
+        "body": [
+          [
+            {
+              "border": [
+                false,
+                false,
+                false,
+                true,
+              ],
+              "style": "tableHeader",
+              "text": "Allowance Category",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                true,
+              ],
+              "style": "tableHeader",
+              "text": "Definition",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                true,
+              ],
+              "style": "tableHeaderRight",
+              "text": "Total Min",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                true,
+              ],
+              "style": "tableHeaderRight",
+              "text": "Subtotal Min",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                true,
+              ],
+              "style": "tableHeaderRight",
+              "text": "%",
+            },
+          ],
+          [
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellBottomRightMargin",
+              "text": "Unpaid Time",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellBottomMargin",
+              "text": "The company does not pay for all of the time an employee is at the work site. This is known as Unpaid Time. Examples: Unpaid lunches, unpaid ad hoc breaks taken when time permits, etc. Company policy or union contractual language will dictate the categories of time which are unpaid.",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "0.00 m",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "",
+            },
+          ],
+          [
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellBottomRightMargin",
+              "text": "Paid Time",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellBottomMargin",
+              "text": "Company policy or union contractual language will dictate the categories of time paid. This is known as Paid Time. Examples may include: Work time, pre/end of shift meetings, clean-up, breaks, lunches, etc. Value is entered in sidebar.",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "0.00 m",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "",
+            },
+          ],
+          [
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellBottomRightMargin",
+              "text": "Excluded Paid Time",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellBottomMargin",
+              "text": "Excluded Paid Time is time not accounted for in allowances or labor standards but rather accounted for in separate labor models, such as a labor management system or scheduling system.",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "0.00 m",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "",
+            },
+          ],
+          [
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellBottomRightMargin",
+              "text": "Excluded Paid Breaks",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellBottomMargin",
+              "text": "Excluded Paid Breaks are included in Excluded Paid Time, as they impact the allowed rest minutes. 1/2 of Excluded Paid Breaks are deducted from the allowed rest minutes. Value is entered in sidebar.",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "0.00 m",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "",
+            },
+          ],
+          [
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellBottomRightMargin",
+              "text": "Adjusted Paid Time",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellBottomMargin",
+              "text": "Adjusted Paid Time is the remaining time once Excluded Paid Time is removed and Relief Time is added.",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "0.00 m",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "",
+            },
+          ],
+          [
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellBottomRightMargin",
+              "text": "Relief Time",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellBottomMargin",
+              "text": "Relief Time allows for an employee to step away from an operation, while the operation continues to run due to assistance. This reduces the Included Paid Time, resulting in an allowance factor that is less due to the continued running of the operation.  The standard time reflects the amount of Included Paid Time allowed during production time of the line or machine NOT the production time of the individual worker. Relief Time is removed from Included Paid Time. Value is entered in sidebar.",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "0.00 m",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "",
+            },
+          ],
+          [
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellBottomRightMargin",
+              "text": "Total Included Paid Time",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellBottomMargin",
+              "text": "Included Paid Time is paid time when employees are not expected to be engaged in measured activities. If Relief Time is provided, Relief Time is deducted from Included Paid Time.",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "0.00 m",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "0.00 %",
+            },
+          ],
+          [
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellBottomRightMargin",
+              "text": "Included Paid Time",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellBottomMargin",
+              "text": "Scheduled",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "0.00 m",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "",
+            },
+          ],
+          [
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellBottomRightMargin",
+              "text": "Included Paid Breaks",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellBottomMargin",
+              "text": "Included Paid Breaks are included in Included Paid Time. Included Paid Breaks impact the allowed rest minutes. 1/2 of Included Paid Breaks are deducted from the allowed rest minutes. Value is entered in sidebar.",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "0.00 m",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "",
+            },
+          ],
+          [
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellBottomRightMargin",
+              "text": "Included Paid Time",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellBottomMargin",
+              "text": "Unscheduled",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "0.00 m",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "",
+            },
+          ],
+          [
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellBottomRightMargin",
+              "text": "Included Paid Time",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellBottomMargin",
+              "text": "Other Activities Not Included in Labor Standards",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "0.00 m",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "",
+            },
+          ],
+          [
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellBottomRightMargin",
+              "text": "Rest Time Allowed",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellBottomMargin",
+              "text": "Rest Time is determined from industry standard tables recognizing weight handled and the percentage of working time under load. Rest Time accounts for a worker's last hour of working being less productive than their first hour of work. Rest Factor is applied to the difference of the Included Paid Time from the Available Paid Time for Allowance Application. 1/2 of the Excluded and Included Paid Break Time is subtracted from Rest Time. This assumes that 1/2 of Excluded and Included Paid Break Time will be used for rest.",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "0.00 m",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "0.00 %",
+            },
+          ],
+          [
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellBottomRightMargin",
+              "text": "Included Paid Breaks",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellBottomMargin",
+              "text": "Included Paid Breaks are included in Included Paid Time. Included Paid Breaks impact the allowed rest minutes. 1/2 of Included Paid Breaks are deducted from the allowed rest minutes. Value is entered in sidebar.",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "0.00 m",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "",
+            },
+          ],
+          [
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellBottomRightMargin",
+              "text": "Excluded Paid Breaks",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellBottomMargin",
+              "text": "Excluded Paid Breaks are included in Excluded Paid Time, as they impact the allowed rest minutes. 1/2 of Excluded Paid Breaks are deducted from the allowed rest minutes. Value is entered in sidebar.",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "0.00 m",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "",
+            },
+          ],
+          [
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellBottomRightMargin",
+              "text": "Total Included + Excluded Time",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellBottomMargin",
+              "text": "",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "0.00 m",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "",
+            },
+          ],
+          [
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellBottomRightMargin",
+              "text": "Rest Offset Minutes",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellBottomMargin",
+              "text": "(Total Included + Excluded)/2",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "0.00 m",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "",
+            },
+          ],
+          [
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellBottomRightMargin",
+              "text": "Total Rest Minutes",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellBottomMargin",
+              "text": "(Rest Time – Rest Offset)",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "0.00 m",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "",
+            },
+          ],
+          [
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellBottomRightMargin",
+              "text": "Total Rest Time",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellBottomMargin",
+              "text": "(From Rest Calculation)",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "0.00 m",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "0.00 %",
+            },
+          ],
+          [
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellBottomRightMargin",
+              "text": "Delay Time",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellBottomMargin",
+              "text": "Delays are best determined by a work sampling study to determine the extent of minor unavoidable delays. Effort should be made to correct the causes of delays; where they cannot be corrected, a delay allowance should be provided. If delays are corrected after the allowance has been applied, a new study should be taken (or parse the original study to remove the corrected delay). It is also acceptable to use the industry standard of 2% of The Available Paid Time for Allowance Application minus the the Allowed Paid Time.",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "0.00 m",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "0.00 %",
+            },
+          ],
+          [
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellBottomRightMargin",
+              "text": "Minor Unavoidable Delay",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellBottomMargin",
+              "text": "",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "0.00 m",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "0.00 %",
+            },
+          ],
+          [
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellBottomRightMargin",
+              "text": "Additional Delay",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellBottomMargin",
+              "text": "Additional paid delay time when workers are not expected to be engaged in activities measured in labor standards. Examples: Warehouse congestion, unutilized time provided to maintain queue length expectations, etc.",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "0.00 m",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "0.00 %",
+            },
+          ],
+          [
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellBottomRightMargin",
+              "text": "Allowance Percent",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellBottomMargin",
+              "text": "(Included Paid Time + Rest Time + Delay Time) / Adjusted Paid Time",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "0.00 %",
+            },
+          ],
+          [
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellBottomRightMargin",
+              "text": "Calculated PR&D Allowance Factor",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellBottomMargin",
+              "text": "Adjusted Paid Time / (Adjusted Paid Time - (Included Paid Time + Rest Time + Delay Time)) - 100%",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "0.00 %",
+            },
+          ],
+          [
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellBottomRightMargin",
+              "text": "Incentive Opportunity Allowance",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellBottomMargin",
+              "text": "This is additional allowance time designed to ensure that an employee is provided time to achieve incentive during machine operations. It is a manual input and is decided by Management or union contractual language. Value is entered in sidebar.",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "",
+            },
+            {
+              "border": [
+                false,
+                false,
+                false,
+                false,
+              ],
+              "style": "cellStyleRight",
+              "text": "0.00 %",
+            },
+          ],
+        ],
+        "headerRows": 1,
+        "widths": [
+          140,
+          380,
+          70,
+          70,
+          50,
+          "*",
+        ],
+      },
+    },
+  ],
+  "footer": [Function],
+  "header": [Function],
+  "pageOrientation": "landscape",
+  "styles": {
+    "cellBottomMargin": {
+      "margin": [
+        0,
+        0,
+        0,
+        10,
+      ],
+    },
+    "cellBottomRightMargin": {
+      "margin": [
+        0,
+        0,
+        10,
+        10,
+      ],
+    },
+    "cellStyle": {
+      "fontSize": 9,
+      "lineHeight": 1.2,
+    },
+    "cellStyleBoldGray": {
+      "bold": true,
+      "fillColor": "#eaeaea",
+      "fontSize": 9,
+    },
+    "cellStyleCenter": {
+      "alignment": "center",
+      "fontSize": 9,
+    },
+    "cellStyleCenterBoldGray": {
+      "alignment": "center",
+      "bold": true,
+      "fillColor": "#eaeaea",
+      "fontSize": 9,
+    },
+    "cellStyleRight": {
+      "alignment": "right",
+      "fontSize": 9,
+    },
+    "cellStyleRightBoldGray": {
+      "alignment": "right",
+      "bold": true,
+      "fillColor": "#eaeaea",
+      "fontSize": 9,
+    },
+    "cellTitleStyle": {
+      "bold": true,
+      "fontSize": 9,
+    },
+    "cellTitleStyleRight": {
+      "alignment": "right",
+      "bold": true,
+      "fontSize": 9,
+    },
+    "commentCellStyle": {
+      "fontSize": 9,
+      "lineHeight": 1.2,
+      "margin": [
+        0,
+        2,
+        0,
+        1,
+      ],
+    },
+    "commentCellTitleStyle": {
+      "bold": true,
+      "fontSize": 9,
+      "lineHeight": 1.2,
+      "margin": [
+        0,
+        2,
+        0,
+        1,
+      ],
+    },
+    "elementEmbeddedTable": {
+      "fontSize": 9,
+      "margin": [
+        20,
+        0,
+        0,
+        0,
+      ],
+    },
+    "footerLeft": {
+      "alignment": "left",
+      "bold": true,
+      "fontSize": 8,
+      "margin": [
+        0,
+        0,
+        30,
+        30,
+      ],
+    },
+    "footerRight": {
+      "alignment": "right",
+      "bold": true,
+      "fontSize": 8,
+      "margin": [
+        30,
+        0,
+        0,
+        30,
+      ],
+    },
+    "header": {
+      "alignment": "center",
+      "bold": true,
+      "fontSize": 14,
+      "margin": [
+        30,
+        15,
+        30,
+        10,
+      ],
+    },
+    "headerLeftSideItem": {
+      "alignment": "left",
+      "fontSize": 11,
+      "margin": [
+        0,
+        5,
+        0,
+        0,
+      ],
+    },
+    "headerRightSideItem": {
+      "alignment": "right",
+      "fontSize": 11,
+      "margin": [
+        0,
+        5,
+        0,
+        0,
+      ],
+    },
+    "subtable": {
+      "fontSize": 9,
+      "margin": [
+        7,
+        10,
+        0,
+        0,
+      ],
+    },
+    "subtableBuffered": {
+      "fontSize": 9,
+      "margin": [
+        7,
+        10,
+        0,
+        10,
+      ],
+    },
+    "subtableTight": {
+      "fontSize": 9,
+      "margin": [
+        7,
+        0,
+        0,
+        0,
+      ],
+    },
+    "table": {
+      "fontSize": 9,
+      "margin": [
+        0,
+        10,
+        0,
+        0,
+      ],
+    },
+    "tableHeader": {
+      "bold": true,
+      "color": "black",
+      "fontSize": 11,
+    },
+    "tableHeaderCenter": {
+      "alignment": "center",
+      "bold": true,
+      "color": "black",
+      "fontSize": 11,
+    },
+    "tableHeaderRight": {
+      "alignment": "right",
+      "bold": true,
+      "color": "black",
+      "fontSize": 11,
+    },
+    "title": {
+      "bold": true,
+      "fontSize": 13,
+    },
+    "topTable": {
+      "fontSize": 9,
+      "margin": [
+        0,
+        10,
+        0,
+        0,
+      ],
+    },
+  },
+}
+`;

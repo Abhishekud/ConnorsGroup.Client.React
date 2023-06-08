@@ -1,0 +1,46 @@
+.list-item-inserter-container {
+  margin-left: -30px;
+
+  > .list-item-inserter {
+    @include flexbox(row, flex-start, center);
+
+    height: 16px;
+    margin-top: -6px;
+    margin-bottom: -6px;
+
+    > .plus-button-container {
+      flex: 0 0 300px;
+      line-height: 1;
+      height: 100%;
+
+      &:hover {
+        > i, + .indicator-bar {
+          opacity: 1;
+          transition: opacity .5s linear;
+        }
+      }
+
+      > i {
+        opacity: 0;
+        margin-top: -1px;
+        margin-left: 6px;
+        cursor: pointer;
+        color: $brand-primary;
+        font-size: 2rem;
+
+        &.disabled {
+          cursor: not-allowed;
+        }
+      }
+    }
+
+    > .indicator-bar {
+      opacity: 0;
+      flex: 1;
+      height: 2px;
+      margin-left: -270px;
+      background-color: $brand-primary;
+      pointer-events: none;
+    }
+  }
+}

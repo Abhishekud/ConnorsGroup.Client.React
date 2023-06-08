@@ -1,0 +1,7 @@
+export const TOGGLE_IMPORT_UNIT_OF_MEASURES_VALIDATION_ERRORS = 'TOGGLE_IMPORT_UNIT_OF_MEASURES_VALIDATION_ERRORS';
+
+export function toggleImportUnitOfMeasuresValidationErrors() {
+  return {
+    type: TOGGLE_IMPORT_UNIT_OF_MEASURES_VALIDATION_ERRORS,
+  };
+}

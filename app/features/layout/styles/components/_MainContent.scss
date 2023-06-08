@@ -1,0 +1,14 @@
+.page > .page-body > .main-content {
+  padding: 30px;
+  overflow: auto;
+  flex: 1 100%;
+
+  &.loading {
+    padding: 0;
+  }
+
+  > .loading-overlay {
+    height: 100%;
+    font-size: 2em;
+  }
+}

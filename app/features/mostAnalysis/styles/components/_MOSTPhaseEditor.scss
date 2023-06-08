@@ -1,0 +1,19 @@
+.most-steps-container > .most-step-container > .most-step-editor > .most-phases > .most-phase {
+  position: relative;
+  border-right: 2px solid $gray;
+  border-bottom: 2px solid $gray;
+
+  flex: 1 370px;
+  min-width: 370px;
+  height: 200px;
+
+  > .name {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: $gray-dark;
+    font-weight: bold;
+  }
+
+  @include flexbox(row, center, center);
+}

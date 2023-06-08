@@ -1,0 +1,7 @@
+export const TOGGLE_IMPORT_LABOR_CATEGORIES_VALIDATION_ERRORS = 'TOGGLE_IMPORT_LABOR_CATEGORIES_VALIDATION_ERRORS';
+
+export function toggleImportLaborCategoriesValidationErrors() {
+  return {
+    type: TOGGLE_IMPORT_LABOR_CATEGORIES_VALIDATION_ERRORS,
+  };
+}

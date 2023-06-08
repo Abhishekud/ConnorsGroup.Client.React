@@ -1,0 +1,20 @@
+.application-rule-item {
+  margin-top: -1px;
+  display: flex;
+  height: 30px;
+
+  .application-rule-value, .application-rule-description {
+    display: inline-block;
+    border: 1px solid black;
+    padding: 4px 6px;
+  }
+
+  .application-rule-value {
+    width:40px;
+    text-align: center;
+  }
+  .application-rule-description {
+    border-left: none;
+    flex: 1;
+  }
+}

@@ -1,0 +1,13 @@
+import {http} from '../../shared/services';
+
+export const LOAD_ELEMENT_UNITS_OF_MEASURE_LIST = 'LOAD_ELEMENT_UNITS_OF_MEASURE_LIST';
+export const LOAD_ELEMENT_UNITS_OF_MEASURE_LIST_PENDING = `${LOAD_ELEMENT_UNITS_OF_MEASURE_LIST}_PENDING`;
+export const LOAD_ELEMENT_UNITS_OF_MEASURE_LIST_FULFILLED = `${LOAD_ELEMENT_UNITS_OF_MEASURE_LIST}_FULFILLED`;
+export const LOAD_ELEMENT_UNITS_OF_MEASURE_LIST_REJECTED = `${LOAD_ELEMENT_UNITS_OF_MEASURE_LIST}_REJECTED`;
+
+export function loadUnitsOfMeasureList() {
+  return {
+    type: LOAD_ELEMENT_UNITS_OF_MEASURE_LIST,
+    payload: http.get('element-units-of-measure/list'),
+  };
+}

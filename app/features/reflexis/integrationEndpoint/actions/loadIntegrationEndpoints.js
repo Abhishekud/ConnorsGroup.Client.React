@@ -1,0 +1,13 @@
+import {http} from '../../../shared/services';
+
+export const LOAD_INTEGRATION_ENDPOINTS = 'REFLEXIS/INTEGRATION_ENDPOINT/LOAD_INTEGRATION_ENDPOINTS';
+export const LOAD_INTEGRATION_ENDPOINTS_PENDING = `${LOAD_INTEGRATION_ENDPOINTS}_PENDING`;
+export const LOAD_INTEGRATION_ENDPOINTS_FULFILLED = `${LOAD_INTEGRATION_ENDPOINTS}_FULFILLED`;
+export const LOAD_INTEGRATION_ENDPOINTS_REJECTED = `${LOAD_INTEGRATION_ENDPOINTS}_REJECTED`;
+
+export function loadIntegrationEndpoints() {
+  return {
+    type: LOAD_INTEGRATION_ENDPOINTS,
+    payload: http.get('reflexis/endpoints'),
+  };
+}

@@ -1,0 +1,13 @@
+import {http} from '../../shared/services';
+
+export const LOAD_CHARACTERISTICS_FOR_DEPARTMENT = 'LOAD_CHARACTERISTICS_FOR_DEPARTMENT';
+export const LOAD_CHARACTERISTICS_FOR_DEPARTMENT_REJECTED = `${LOAD_CHARACTERISTICS_FOR_DEPARTMENT}_REJECTED`;
+export const LOAD_CHARACTERISTICS_FOR_DEPARTMENT_PENDING = `${LOAD_CHARACTERISTICS_FOR_DEPARTMENT}_PENDING`;
+export const LOAD_CHARACTERISTICS_FOR_DEPARTMENT_FULFILLED = `${LOAD_CHARACTERISTICS_FOR_DEPARTMENT}_FULFILLED`;
+
+export function loadCharacteristicsForDepartment(departmentId) {
+  return {
+    type: LOAD_CHARACTERISTICS_FOR_DEPARTMENT,
+    payload: http.get(`characteristics/list-for-department/${departmentId}`),
+  };
+}

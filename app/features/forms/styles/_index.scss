@@ -1,0 +1,50 @@
+@import 'components/_MatrixGridCheckbox';
+@import 'components/_MatrixGridHeaderCheckbox';
+@import 'components/_SelectListItemAppender';
+@import 'components/_ValidationSummary';
+@import 'components/_Time';
+
+.form-group.toggle-switch {
+  @include flexbox(row, space-between, flex-start);
+
+  i {
+    font-size: 1.5em;
+  }
+
+  i.clickable {
+    cursor: pointer;
+  }
+
+  i.disabled {
+    cursor: $cursor-disabled;
+  }
+}
+
+.help-block.validation-error {
+  font-size: .85em;
+}
+
+.form-group > label {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+  > div {
+    display: inline-block;
+    margin-left: 5px;
+  }
+
+  > small {
+    color: $gray-dark;
+    font-size: .75em;
+  }
+}
+
+.k-widget.form-control .k-input {
+  height: inherit;
+}
+
+.react-datepicker__input-container {
+  width: 100%;
+}

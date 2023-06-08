@@ -1,0 +1,49 @@
+i.back-button {
+  cursor: pointer;
+}
+
+h1.standalone {
+  margin: 0;
+}
+
+.tooltip .tooltip-inner {
+  padding: 8px 16px;
+}
+
+.draft {
+  background-color: $status-draft;
+}
+
+.ready-for-qa {
+  background-color: $status-qa;
+}
+
+.archive {
+  background-color: $status-archive;
+}
+
+.ml-5{
+  margin-left: 5px;
+}
+
+.select-dropdown-option-header{
+
+  background-color: #f1f1f1;
+  padding: 6px 62px 6px 65px;
+  color: #000000;
+  margin-bottom: 4px;
+  display: block;
+  text-align: center;
+}
+
+.select-dropdown-option-header:hover{
+ color:#ffffff;
+ background-color:#dd6e42;
+}
+
+
+.select-dropdown-no-data-text{
+  padding: 10px;
+  text-align: center;
+  line-height: 20px;
+}

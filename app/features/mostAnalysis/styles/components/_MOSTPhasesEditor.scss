@@ -1,0 +1,5 @@
+.most-steps-container > .most-step-container > .most-step-editor > .most-phases {
+  @include flexbox(row, flex-start, flex-start);
+  flex-wrap: wrap;
+  border-left: 2px solid $gray;
+}

@@ -1,0 +1,5 @@
+.page > .page-body {
+  @include flexbox(row, space-between);
+  flex: 1;
+  min-height: 0;
+}

@@ -1,0 +1,7 @@
+export const SHOW_IMPORT_KRONOS_TASK_GROUPS_VALIDATION_ERRORS = 'SHOW_IMPORT_KRONOS_TASK_GROUPS_VALIDATION_ERRORS';
+
+export function showImportTaskGroupsValidationErrors() {
+  return {
+    type: SHOW_IMPORT_KRONOS_TASK_GROUPS_VALIDATION_ERRORS,
+  };
+}

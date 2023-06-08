@@ -1,0 +1,41 @@
+.terms-page {
+  .terms {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+
+    @media print {
+      height: inherit;
+    }
+
+    .read-window {
+      max-height: 90%;
+      overflow-y: scroll;
+
+      @media print {
+        overflow-y: inherit;
+      }
+
+      p {
+        padding-right: 10px;
+      }
+    }
+
+    h4 {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    .bolded {
+      font-weight: bold;
+    }
+
+    .actions {
+      @include flexbox(row, space-between, center);
+      width: 200px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 8px; }
+  }
+}

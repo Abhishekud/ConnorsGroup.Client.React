@@ -1,0 +1,7 @@
+export const CLEAR_VOLUME_DRIVER_MAPPING_VARIABLES_LIST_SORTS = 'CLEAR_VOLUME_DRIVER_MAPPING_VARIABLES_LIST_SORTS';
+
+export function clearVolumeDriverMappingVariablesListSorts() {
+  return {
+    type: CLEAR_VOLUME_DRIVER_MAPPING_VARIABLES_LIST_SORTS,
+  };
+}

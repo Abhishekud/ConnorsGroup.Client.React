@@ -1,0 +1,8 @@
+export const SHOW_IMPORT_REFLEXIS_STORE_ATTRIBUTES_MODAL = 'SHOW_IMPORT_REFLEXIS_STORE_ATTRIBUTES_MODAL';
+
+export function showImportStoreAttributesModal() {
+  return {
+    type: SHOW_IMPORT_REFLEXIS_STORE_ATTRIBUTES_MODAL,
+  };
+}
+

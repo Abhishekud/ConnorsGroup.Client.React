@@ -1,0 +1,84 @@
+ul.navigation {
+  @include flexbox(column);
+
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+
+  > li.link, > li.group {
+    flex-basis: 40px;
+    @include flexbox();
+
+    &:hover, &.selected:hover {
+      background-color: $hover-bg;
+    }
+    &.selected {
+      background-color: $active-lighter;
+    }
+
+    > a {
+      flex-basis: 100%;
+      @include flexbox(row, $align-items: center);
+
+      cursor: pointer;
+      color: $text-color;
+      text-decoration: none;
+
+      padding: 0 15px 0 25px;
+
+      &.active {
+        border-left: 15px solid $text-color;
+        padding-left: 20px;
+        font-weight: bold;
+      }
+
+      > div.content {
+        flex-basis: 100%;
+        @include flexbox(row, space-between, baseline);
+
+        > i.icon {
+          flex: 0 0 1.8em;
+        }
+
+        > span.text {
+          flex-basis: 100%;
+        }
+      }
+    }
+
+    &.group-link {
+      font-size: .8em;
+
+      > a {
+        padding-left: 55px;
+
+        &.active {
+          padding-left: 40px;
+        }
+      }
+    }
+  }
+
+  > li.group, li.subgroup {
+    &.collapsed i.expanded-indicator {
+      color: $gray;
+    }
+
+    &.collapsed:hover i.expanded-indicator {
+      color: $text-color;
+    }
+
+    &.expanded i.expanded-indicator {
+      color: $text-color;
+    }
+  }
+
+  li.group.subgroup .content {
+    padding-left: 30px;
+    font-size: .8em;
+  }
+
+  .group-link.subgroup {
+    border-left: 15px solid #ccc;
+  }
+}

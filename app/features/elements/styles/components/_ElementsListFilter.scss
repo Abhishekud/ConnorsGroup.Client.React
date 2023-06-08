@@ -1,0 +1,22 @@
+.elements-list-filter {
+  .edit-controls {
+    margin-top: 10px;
+
+    a {
+      font-size: 14px;
+      color: $gray-dark;
+      margin-left: 10px;
+    }
+  }
+
+  .tmu-container {
+    > .tmu-label {
+      font-weight: bold;
+      margin: 10px 0px 10px 6px;
+    }
+
+    > .form-group {
+      margin-left: 20px;
+    }
+  }
+}

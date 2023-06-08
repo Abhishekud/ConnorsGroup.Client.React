@@ -1,0 +1,7 @@
+export const TOGGLE_LOCATION_DEPARTMENTS_LIST_FILTERS_SIDEBAR = 'TOGGLE_LOCATION_DEPARTMENTS_LIST_FILTERS_SIDEBAR';
+
+export function toggleLocationDepartmentsListFiltersSidebar() {
+  return {
+    type: TOGGLE_LOCATION_DEPARTMENTS_LIST_FILTERS_SIDEBAR,
+  };
+}

@@ -1,0 +1,7 @@
+export const CANCEL_CREATE_VOLUME_DRIVER_MAPPING_VARIABLES = 'CANCEL_CREATE_VOLUME_DRIVER_MAPPING_VARIABLES';
+
+export function cancelCreateVolumeDriverMappingVariables() {
+  return {
+    type: CANCEL_CREATE_VOLUME_DRIVER_MAPPING_VARIABLES,
+  };
+}

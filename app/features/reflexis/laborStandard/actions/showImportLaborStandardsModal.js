@@ -1,0 +1,8 @@
+export const SHOW_IMPORT_REFLEXIS_LABOR_STANDARDS_MODAL = 'SHOW_IMPORT_REFLEXIS_LABOR_STANDARDS_MODAL';
+
+export function showImportLaborStandardsModal() {
+  return {
+    type: SHOW_IMPORT_REFLEXIS_LABOR_STANDARDS_MODAL,
+  };
+}
+

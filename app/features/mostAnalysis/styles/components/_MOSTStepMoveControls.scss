@@ -1,0 +1,41 @@
+.most-steps-container > .most-step-container {
+  > .most-step, > .most-step-editor > .header {
+    > .move-controls {
+      flex: 0 0 45px;
+      min-width: 45px;
+      margin: 0 0 0 10px;
+
+      @include flexbox(row, flex-end);
+
+      > .move-arrows {
+        @include flexbox(column, center);
+        font-size: 2.5rem;
+
+        > .disabled {
+          color: $gray-darker;
+        }
+
+        > i:first-child {
+          margin-top: -3px;
+        }
+
+        > i:last-child {
+          margin-bottom: -3px;
+        }
+      }
+
+      > .dropdown {
+        @include flexbox(column, center);
+        height: 20px;
+        margin-top: 4px;
+
+        > .dropdown-toggle {
+          color: $text-color;
+          padding-left: 0;
+          padding-right: 0;
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+}

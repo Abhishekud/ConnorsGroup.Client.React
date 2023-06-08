@@ -1,0 +1,11 @@
+.search-elements-page {
+  .ReactVirtualized__Table__row {
+    cursor: pointer;
+  }
+
+  .page-header-actions {
+    > button {
+      margin-left: 20px;
+    }
+  }
+}

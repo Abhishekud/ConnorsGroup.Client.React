@@ -1,0 +1,4 @@
+!app/**
+*.swp
+node_modules/
+coverage/

@@ -1,0 +1,24 @@
+.attribute-list-entry {
+  padding: 10px;
+  background-color: $gray-light;
+  border-radius: 5px;
+  margin-bottom: 5px;
+
+  @include flexbox(row, space-between, center);
+
+  > span {
+    font-weight: bold;
+    font-size: 1.2em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-wrap: normal;
+
+    > small {
+      font-size: 1.3rem;
+    }
+  }
+
+  > button {
+    font-weight: bold;
+  }
+}

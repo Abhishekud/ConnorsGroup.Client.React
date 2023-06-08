@@ -1,0 +1,61 @@
+.dashboard > .labor-projections > .navigation {
+  flex: 0 0 auto;
+
+  @include flexbox(row, space-between, center);
+
+  margin-bottom: 15px;
+
+  .nav-pills {
+    > li.active {
+      > a, > a:hover {
+        color: $text-color;
+        font-weight: bold;
+        font-size: 1.2em;
+        border-bottom: solid 5px $text-color;
+        border-radius: 0;
+      }
+
+      > a {
+        background-color: #fff;
+      }
+
+      > a:hover {
+        background-color: $hover-bg;
+      }
+    }
+
+    > li {
+      > a, > a:hover {
+        color: $gray;
+        font-weight: bold;
+        font-size: 1.2em;
+        border-radius: 0;
+      }
+
+      > a {
+        background-color: #fff;
+      }
+
+      > a:hover {
+        background-color: $hover-bg;
+        color: $text-color;
+        border-bottom: solid 5px $text-color;
+      }
+    }
+  }
+
+  .bread-crumbs {
+    flex: 1;
+
+    text-align: right;
+    font-size: 14px;
+
+    .breadcrumb-item, .item-name, .item-value, i {
+      display: inline;
+      margin-right: 5px;
+    }
+    .item-name.clickable {
+      font-weight: bold;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+export const TOGGLE_IMPORT_DEPARTMENTS_VALIDATION_ERRORS = 'TOGGLE_IMPORT_DEPARTMENTS_VALIDATION_ERRORS';
+
+export function toggleImportDepartmentsValidationErrors() {
+  return {
+    type: TOGGLE_IMPORT_DEPARTMENTS_VALIDATION_ERRORS,
+  };
+}

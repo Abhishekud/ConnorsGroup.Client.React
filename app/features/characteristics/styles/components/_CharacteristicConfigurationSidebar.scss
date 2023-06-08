@@ -1,0 +1,36 @@
+.characteristics-list-page {
+  .column-configuration-container {
+    display: flex;
+    flex-Flow: row nowrap;
+    width: 100%;
+    justify-content: space-between;
+    border: 1px solid #eaeaea;
+    padding: 4px 8px;
+    line-height: 30px;
+    margin-bottom: 5px;
+  };
+
+  .column-configuration-switch {
+    flex: 0 0 auto;
+  };
+
+  .column-configuration-title {
+    flex: 1 0;
+    overflow-wrap: anywhere;
+  };
+  .sidebar, .sidebar-scrollable-hidden {
+    overflow: hidden !important;
+  }
+  .sidebar-scrollable-spacing{
+    padding: 0 25px 0px 25px!important;
+  }
+  .grid-configuration-open{
+    height: calc(100vh - 200px);
+    overflow-y: auto;
+
+    > div:not(.column-configuration-container) {
+      padding-bottom: 30px;
+    }
+
+  }
+}

@@ -1,0 +1,20 @@
+.create-edit-characteristic-form {
+    .bulk-edit-characteristic-sets {
+        @include flexbox();
+        flex-wrap: wrap;
+        margin-right: -10px;
+    
+        div > .form-group.characteristic-set {
+          margin-right: 10px;
+        }
+    
+        div > .form-group > label, div > .checkbox > label {
+          white-space: normal !important;
+          word-break: break-word !important;
+        }
+    }
+}
+
+.characteristics-list-edit-sidebar .create-edit-characteristic-form .bulk-edit-characteristic-sets > div {
+    width: 100%;
+}

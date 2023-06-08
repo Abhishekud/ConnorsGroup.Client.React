@@ -1,0 +1,35 @@
+.select-list-item-appender {
+  .list-selection {
+    @include flexbox(row, flex-start);
+
+    > button {
+      margin-left: 10px;
+    }
+  }
+}
+
+.tag-list {
+  margin: 10px -7px 8px 0;
+
+  @include flexbox(row, flex-start);
+  flex-wrap: wrap;
+
+  > .tag-item {
+    @include flexbox(row, flex-start, center);
+
+    background-color: $gray-dark;
+    border-radius: 4px;
+    padding: 4px 8px;
+    margin: 0 7px 7px 0;
+    flex: 0 1 auto;
+
+    > span {
+      font-size: 14px;
+    }
+
+    > i {
+      font-size: 11px;
+      margin-left: 5px;
+    }
+  }
+}

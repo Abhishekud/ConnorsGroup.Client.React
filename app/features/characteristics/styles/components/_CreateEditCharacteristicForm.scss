@@ -1,0 +1,43 @@
+.create-edit-characteristic-form {
+  .characteristic-sets {
+    @include flexbox();
+    flex-wrap: wrap;
+    margin-right: -10px;
+
+    > .form-group.characteristic-set {
+      margin-right: 10px;
+    }
+  }
+
+  .edit-characteristic-sets {
+    @include flexbox();
+    flex-wrap: wrap;
+    margin-right: -10px;
+
+    > .form-group.characteristic-set {
+      margin-right: 10px;
+    }
+
+    > .form-group > label {
+      white-space: normal !important;
+      word-break: break-word !important;
+    }
+  }
+
+  .rename-characteristic {
+    margin-bottom: 2rem;
+  }
+}
+
+.modal-body .create-edit-characteristic-form .characteristic-sets > .form-group.characteristic-set {
+  flex: 1 125px;
+  min-width: 100px;
+}
+
+.characteristics-list-edit-sidebar .create-edit-characteristic-form .characteristic-sets > .form-group.characteristic-set {
+  width: 47%;
+}
+
+.characteristics-list-edit-sidebar .create-edit-characteristic-form .edit-characteristic-sets > .form-group.characteristic-set {
+  width: 100%;
+}

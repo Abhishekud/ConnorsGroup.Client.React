@@ -1,0 +1,24 @@
+.standard-profile-page {
+  >.page-body>.main-content {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+
+  .dropdown button.dropdown-toggle i.fa {
+    margin-left: 7px !important;
+  }
+}
+
+.standard-element-groups {
+  .page-body>.main-content {
+    padding-top: 10px !important;
+  }
+}
+
+.standard-builder-page {
+  .page-header {
+    position: relative;
+    z-index: 2;
+    background-color: $white;
+  }
+}

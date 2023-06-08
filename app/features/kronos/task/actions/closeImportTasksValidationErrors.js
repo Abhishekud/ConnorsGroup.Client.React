@@ -1,0 +1,7 @@
+export const CLOSE_IMPORT_KRONOS_TASKS_VALIDATION_ERRORS = 'CLOSE_IMPORT_KRONOS_TASKS_VALIDATION_ERRORS';
+
+export function closeImportTasksValidationErrors() {
+  return {
+    type: CLOSE_IMPORT_KRONOS_TASKS_VALIDATION_ERRORS,
+  };
+}

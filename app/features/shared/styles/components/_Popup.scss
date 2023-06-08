@@ -1,0 +1,9 @@
+.error-validation-popup {
+    margin-top: 2px;
+    z-index: 1 !important;
+
+    .validation-error {
+        padding: 1px 4px;
+        color: $popup-error;
+    }
+}

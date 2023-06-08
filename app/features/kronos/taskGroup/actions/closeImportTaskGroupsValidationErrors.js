@@ -1,0 +1,7 @@
+export const CLOSE_IMPORT_KRONOS_TASK_GROUPS_VALIDATION_ERRORS = 'CLOSE_IMPORT_KRONOS_TASK_GROUPS_VALIDATION_ERRORS';
+
+export function closeImportTaskGroupsValidationErrors() {
+  return {
+    type: CLOSE_IMPORT_KRONOS_TASK_GROUPS_VALIDATION_ERRORS,
+  };
+}
